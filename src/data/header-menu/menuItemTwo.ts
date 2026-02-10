@@ -42,7 +42,7 @@ const menuItemsTwo: MenuItem[] = [
     },
     {
         title: "AI/ML Playbook",
-        href: "https://enterprise-ai-playbook-demo.vercel.app",
+        href: "https://healthcare-ai-consultant.com",
         static: true,
     },
     {
