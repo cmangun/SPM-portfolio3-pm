@@ -1,0 +1,937 @@
+// ============================================
+// ENTERPRISE CHARTS SCSS - Design System
+// 39 New Enterprise AI/ML Governance Charts
+// ============================================
+
+// Import color tokens (reference - actual values in colors.ts)
+// $background: #e4e4e4;
+// $white: #ffffff;
+// $primary: #1a1a1a;
+// $secondary: #333;
+// $muted: #555;
+// $border: #d0d0d0;
+
+// ============================================
+// BASE CHART CONTAINER
+// ============================================
+
+.chart-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 0;
+  padding: 1.5rem;
+  
+  &--neumorphic {
+    background: #e4e4e4;
+    box-shadow: 
+      8px 8px 16px #c8c8c8,
+      -8px -8px 16px #ffffff;
+  }
+}
+
+.chart-header {
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+  
+  &__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  &__subtitle {
+    font-size: 0.75rem;
+    color: #666;
+    margin: 0;
+  }
+  
+  &__period {
+    font-size: 0.7rem;
+    color: #888;
+    margin-top: 0.25rem;
+  }
+}
+
+// ============================================
+// METRIC CARDS & KPI TILES
+// ============================================
+
+.metric-grid {
+  display: grid;
+  gap: 0.75rem;
+  
+  &--2 { grid-template-columns: repeat(2, 1fr); }
+  &--3 { grid-template-columns: repeat(3, 1fr); }
+  &--4 { grid-template-columns: repeat(4, 1fr); }
+  &--5 { grid-template-columns: repeat(5, 1fr); }
+}
+
+.metric-card {
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  text-align: center;
+  
+  &--highlight {
+    background: #1a1a1a;
+    color: #fff;
+    
+    .metric-card__label { color: #ccc; }
+  }
+  
+  &--warning {
+    border-left: 3px solid #666;
+  }
+  
+  &--critical {
+    border-left: 3px solid #1a1a1a;
+  }
+  
+  &--success {
+    border-left: 3px solid #888;
+  }
+  
+  &__value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.2;
+  }
+  
+  &__label {
+    font-size: 0.65rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0.25rem;
+  }
+  
+  &__delta {
+    font-size: 0.7rem;
+    margin-top: 0.25rem;
+    
+    &--up { color: #444; }
+    &--down { color: #666; }
+  }
+}
+
+// ============================================
+// DATA TABLES
+// ============================================
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+  
+  th, td {
+    padding: 0.625rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  th {
+    background: #f5f5f5;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    letter-spacing: 0.5px;
+  }
+  
+  tr:hover td {
+    background: #fafafa;
+  }
+  
+  &--striped {
+    tr:nth-child(even) td {
+      background: #fafafa;
+    }
+  }
+  
+  &--compact {
+    th, td {
+      padding: 0.4rem 0.5rem;
+      font-size: 0.7rem;
+    }
+  }
+}
+
+// ============================================
+// STATUS BADGES & TAGS
+// ============================================
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 500;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  
+  &--healthy, &--compliant, &--approved {
+    background: #e8e8e8;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  &--warning, &--pending, &--review {
+    background: #f0f0f0;
+    color: #444;
+    border: 1px solid #bbb;
+  }
+  
+  &--critical, &--expired, &--rejected {
+    background: #ddd;
+    color: #1a1a1a;
+    border: 1px solid #999;
+  }
+  
+  &--neutral, &--draft {
+    background: #f5f5f5;
+    color: #666;
+    border: 1px solid #ddd;
+  }
+  
+  &__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+}
+
+.risk-tier {
+  display: inline-block;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+  
+  &--high {
+    background: #1a1a1a;
+    color: #fff;
+  }
+  
+  &--medium {
+    background: #666;
+    color: #fff;
+  }
+  
+  &--low {
+    background: #ccc;
+    color: #333;
+  }
+}
+
+// ============================================
+// PROGRESS BARS
+// ============================================
+
+.progress-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 0;
+  overflow: hidden;
+  
+  &__fill {
+    height: 100%;
+    background: #333;
+    transition: width 0.3s ease;
+  }
+  
+  &--thin { height: 4px; }
+  &--thick { height: 12px; }
+  
+  &--gradient {
+    .progress-bar__fill {
+      background: linear-gradient(90deg, #666 0%, #1a1a1a 100%);
+    }
+  }
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+  
+  &__bg {
+    fill: none;
+    stroke: #e0e0e0;
+  }
+  
+  &__fill {
+    fill: none;
+    stroke: #333;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease;
+  }
+}
+
+// ============================================
+// TIMELINE & EVENTS
+// ============================================
+
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0.35rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ddd;
+  }
+  
+  &__item {
+    position: relative;
+    padding-bottom: 1.25rem;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: -1.25rem;
+      top: 0.35rem;
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      border: 2px solid #666;
+      border-radius: 50%;
+    }
+    
+    &--active::before {
+      background: #1a1a1a;
+      border-color: #1a1a1a;
+    }
+    
+    &--complete::before {
+      background: #888;
+      border-color: #888;
+    }
+  }
+  
+  &__date {
+    font-size: 0.65rem;
+    color: #888;
+    margin-bottom: 0.15rem;
+  }
+  
+  &__title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+  
+  &__desc {
+    font-size: 0.7rem;
+    color: #666;
+    margin-top: 0.15rem;
+  }
+}
+
+// ============================================
+// HEATMAP CELLS
+// ============================================
+
+.heatmap-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 500;
+  transition: transform 0.15s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+    z-index: 1;
+  }
+  
+  // Intensity levels (grayscale)
+  &--0 { background: #f5f5f5; color: #999; }
+  &--1 { background: #e0e0e0; color: #666; }
+  &--2 { background: #ccc; color: #444; }
+  &--3 { background: #999; color: #fff; }
+  &--4 { background: #666; color: #fff; }
+  &--5 { background: #333; color: #fff; }
+}
+
+// ============================================
+// GAUGE & DIAL CHARTS
+// ============================================
+
+.gauge {
+  position: relative;
+  
+  &__label {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  &__value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+  
+  &__unit {
+    font-size: 0.7rem;
+    color: #666;
+  }
+  
+  &__target {
+    font-size: 0.65rem;
+    color: #888;
+    margin-top: 0.15rem;
+  }
+}
+
+// ============================================
+// WORKFLOW & PIPELINE
+// ============================================
+
+.pipeline {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  
+  &__stage {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    padding: 0.75rem 0.5rem;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    margin-right: -1px;
+    
+    &:first-child {
+      border-radius: 0;
+    }
+    
+    &:last-child {
+      border-radius: 0;
+    }
+    
+    &--active {
+      background: #1a1a1a;
+      color: #fff;
+      z-index: 1;
+    }
+    
+    &--complete {
+      background: #e8e8e8;
+    }
+  }
+  
+  &__arrow {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 10px solid #ddd;
+    margin: 0 -5px;
+    z-index: 2;
+  }
+  
+  &__label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  &__count {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 0.25rem;
+  }
+}
+
+// ============================================
+// MATRIX & GRID LAYOUTS
+// ============================================
+
+.matrix {
+  display: grid;
+  gap: 2px;
+  
+  &__header {
+    background: #f5f5f5;
+    padding: 0.5rem;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+  }
+  
+  &__cell {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    
+    &--header {
+      background: #f5f5f5;
+      font-weight: 600;
+    }
+  }
+}
+
+// ============================================
+// CARDS & PANELS
+// ============================================
+
+.panel {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 0.75rem;
+  
+  &__header {
+    padding: 0.75rem 1rem;
+    background: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 600;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  &__body {
+    padding: 1rem;
+  }
+  
+  &__footer {
+    padding: 0.75rem 1rem;
+    background: #fafafa;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.7rem;
+    color: #666;
+  }
+}
+
+.card-grid {
+  display: grid;
+  gap: 0.75rem;
+  
+  &--2 { grid-template-columns: repeat(2, 1fr); }
+  &--3 { grid-template-columns: repeat(3, 1fr); }
+  &--4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+// ============================================
+// LEGENDS & ANNOTATIONS
+// ============================================
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e0e0e0;
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.65rem;
+    color: #666;
+  }
+  
+  &__color {
+    width: 12px;
+    height: 12px;
+    border-radius: 0;
+  }
+}
+
+// ============================================
+// TOOLTIPS
+// ============================================
+
+.chart-tooltip {
+  position: absolute;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.7rem;
+  border-radius: 0;
+  pointer-events: none;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  
+  &__title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  &__value {
+    font-size: 0.85rem;
+  }
+  
+  &__label {
+    color: #aaa;
+    font-size: 0.6rem;
+  }
+}
+
+// ============================================
+// SECTION DIVIDERS
+// ============================================
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0;
+  
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e0e0e0;
+  }
+  
+  &__text {
+    font-size: 0.65rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+// ============================================
+// RESPONSIVE UTILITIES
+// ============================================
+
+@media (max-width: 768px) {
+  .metric-grid {
+    &--4, &--5 { grid-template-columns: repeat(2, 1fr); }
+    &--3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  .card-grid {
+    &--3, &--4 { grid-template-columns: 1fr; }
+  }
+  
+  .pipeline {
+    flex-direction: column;
+    
+    &__stage {
+      margin-right: 0;
+      margin-bottom: -1px;
+    }
+    
+    &__arrow {
+      transform: rotate(90deg);
+      margin: -5px 0;
+    }
+  }
+  
+  // Chart container mobile
+  .chart-container {
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .chart-header {
+    &__title {
+      font-size: 0.875rem;
+    }
+    &__subtitle {
+      font-size: 0.7rem;
+    }
+  }
+  
+  // Metric cards mobile
+  .metric-card {
+    padding: 0.75rem;
+    
+    &__value {
+      font-size: 1.25rem;
+    }
+    &__label {
+      font-size: 0.65rem;
+    }
+  }
+  
+  // Timeline mobile
+  .timeline-node {
+    min-width: 120px;
+    padding: 0.5rem;
+    
+    &__title {
+      font-size: 0.7rem;
+    }
+    &__status {
+      font-size: 0.6rem;
+    }
+  }
+  
+  // Status badges mobile
+  .status-badge {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .metric-grid {
+    &--2, &--3, &--4, &--5 { 
+      grid-template-columns: 1fr; 
+    }
+  }
+  
+  .chart-container {
+    padding: 0.75rem;
+  }
+  
+  .metric-card__value {
+    font-size: 1.125rem;
+  }
+}
+
+// ============================================
+// ANIMATION UTILITIES
+// ============================================
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade { animation: fadeIn 0.3s ease; }
+.animate-slide { animation: slideUp 0.3s ease; }
+
+// ============================================
+// CHART-SPECIFIC STYLES
+// ============================================
+
+// Audit Trail Timeline
+.audit-trail {
+  &__entry {
+    display: flex;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    
+    &:last-child { border-bottom: none; }
+  }
+  
+  &__time {
+    flex-shrink: 0;
+    width: 120px;
+    font-size: 0.65rem;
+    color: #888;
+  }
+  
+  &__action {
+    flex: 1;
+    font-size: 0.75rem;
+  }
+  
+  &__actor {
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+  
+  &__hash {
+    font-family: monospace;
+    font-size: 0.6rem;
+    color: #999;
+    background: #f5f5f5;
+    padding: 0.15rem 0.35rem;
+  }
+}
+
+// Compliance Posture
+.compliance-framework {
+  &__row {
+    display: flex;
+    align-items: center;
+    padding: 0.625rem 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  &__name {
+    flex: 1;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  &__score {
+    width: 60px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+  
+  &__bar {
+    width: 120px;
+    margin: 0 1rem;
+  }
+}
+
+// Model Risk Tiers
+.model-tier-matrix {
+  &__header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    background: #f5f5f5;
+    font-size: 0.65rem;
+    font-weight: 600;
+    
+    > div {
+      padding: 0.5rem;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  
+  &__row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    
+    &:hover { background: #fafafa; }
+    
+    > div {
+      padding: 0.625rem 0.5rem;
+      font-size: 0.7rem;
+      border-bottom: 1px solid #f0f0f0;
+    }
+  }
+}
+
+// Human Override Tracker
+.override-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  
+  &__item {
+    text-align: center;
+    padding: 0.75rem;
+    background: #f8f8f8;
+    
+    &--primary {
+      background: #1a1a1a;
+      color: #fff;
+      
+      .override-stats__label { color: #aaa; }
+    }
+  }
+  
+  &__value {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  
+  &__label {
+    font-size: 0.6rem;
+    color: #666;
+    text-transform: uppercase;
+    margin-top: 0.2rem;
+  }
+}
+
+// Cost Allocation
+.cost-allocation {
+  &__bar-group {
+    margin-bottom: 0.75rem;
+  }
+  
+  &__label-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  &__name {
+    color: #333;
+  }
+  
+  &__value {
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+}
+
+// Vendor Risk
+.vendor-card {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  &__name {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  
+  &__metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    font-size: 0.65rem;
+  }
+}
+
+// Board Summary
+.board-summary {
+  &__section {
+    margin-bottom: 1.5rem;
+    
+    &:last-child { margin-bottom: 0; }
+  }
+  
+  &__title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid #1a1a1a;
+  }
+  
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    font-size: 0.75rem;
+    
+    &--highlight {
+      background: #f8f8f8;
+      padding: 0.4rem 0.5rem;
+      margin: 0 -0.5rem;
+    }
+  }
+}

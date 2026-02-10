@@ -1,0 +1,552 @@
+/* FDE Portfolio Overrides */
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800&display=swap');
+
+/* ===========================================
+   COLOR PALETTE - BLACK, WHITE, GRAY ONLY
+   =========================================== */
+:root {
+  --fde-black: #1a1a1a;
+  --fde-dark-gray: #333;
+  --fde-medium-gray: #666;
+  --fde-gray: #999;
+  --fde-light-gray: #e5e5e5;
+  --fde-off-white: #f8f9fa;
+  --fde-white: #ffffff;
+}
+
+/* Apply Roboto globally to FDE pages */
+.fde-page,
+.fde-page * {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* Light theme background */
+.fde-page {
+  background-color: var(--fde-white);
+  color: var(--fde-black);
+}
+
+/* ===========================================
+   GLOBAL TEXT COLOR ENFORCEMENT
+   =========================================== */
+.fde-page h1,
+.fde-page h2,
+.fde-page h3,
+.fde-page h4,
+.fde-page h5,
+.fde-page h6,
+.fde-page p,
+.fde-page span,
+.fde-page li,
+.fde-page a,
+.fde-page div {
+  color: var(--fde-black);
+}
+
+/* Secondary text */
+.fde-page .text-secondary,
+.fde-page .fde-text-secondary {
+  color: var(--fde-medium-gray) !important;
+}
+
+/* Muted text */
+.fde-page .text-muted,
+.fde-page .fde-text-muted {
+  color: var(--fde-gray) !important;
+}
+
+/* ===========================================
+   TYPOGRAPHY - Widow Prevention & Text Wrap
+   =========================================== */
+
+/* Prevent widows/orphans globally */
+.fde-page p,
+.fde-page h1,
+.fde-page h2,
+.fde-page h3,
+.fde-page h4,
+.fde-page li,
+.fde-page span {
+  text-wrap: pretty;
+  -webkit-hyphens: none;
+  hyphens: none;
+  orphans: 2;
+  widows: 2;
+}
+
+/* Hero title */
+.fde-hero-title {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 16px;
+  color: var(--fde-black) !important;
+}
+
+/* Hero subtitle */
+.fde-hero-subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--fde-medium-gray) !important;
+  line-height: 1.5;
+  max-width: 400px;
+  text-wrap: balance;
+}
+
+/* ===========================================
+   SECTION BACKGROUNDS
+   =========================================== */
+.fde-section-white {
+  background-color: var(--fde-white) !important;
+}
+
+.fde-section-gray {
+  background-color: var(--fde-off-white) !important;
+}
+
+.fde-section-dark {
+  background-color: var(--fde-black) !important;
+}
+
+.fde-section-dark h1,
+.fde-section-dark h2,
+.fde-section-dark h3,
+.fde-section-dark h4,
+.fde-section-dark h5,
+.fde-section-dark h6,
+.fde-section-dark p,
+.fde-section-dark span,
+.fde-section-dark li,
+.fde-section-dark div {
+  color: var(--fde-white) !important;
+}
+
+.fde-section-dark .fde-text-muted {
+  color: var(--fde-gray) !important;
+}
+
+/* ===========================================
+   LABELS AND HEADERS
+   =========================================== */
+.fde-section-label {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  color: var(--fde-gray) !important;
+  margin-bottom: 24px !important;
+}
+
+.fde-section-title {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  color: var(--fde-black) !important;
+  line-height: 1.3 !important;
+  margin-bottom: 32px !important;
+}
+
+.fde-section-dark .fde-section-label {
+  color: var(--fde-gray) !important;
+}
+
+.fde-section-dark .fde-section-title {
+  color: var(--fde-white) !important;
+}
+
+/* ===========================================
+   META LIST
+   =========================================== */
+.fde-meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--fde-light-gray);
+  padding-top: 24px;
+}
+
+.fde-meta-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--fde-light-gray);
+}
+
+.fde-meta-list li:last-child {
+  border-bottom: none;
+}
+
+.fde-meta-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--fde-gray) !important;
+  margin-bottom: 4px;
+}
+
+.fde-meta-value {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--fde-black) !important;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+/* ===========================================
+   CARDS AND BOXES
+   =========================================== */
+.fde-card {
+  background-color: var(--fde-white);
+  border: 1px solid var(--fde-light-gray);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.fde-card-dark {
+  background-color: var(--fde-black);
+  border: 1px solid var(--fde-dark-gray);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.fde-card-dark * {
+  color: var(--fde-white) !important;
+}
+
+.fde-card-dark .fde-text-muted {
+  color: var(--fde-gray) !important;
+}
+
+/* ===========================================
+   METRICS / STATS
+   =========================================== */
+.fde-metric-value {
+  font-size: 48px !important;
+  font-weight: 800 !important;
+  color: var(--fde-black) !important;
+}
+
+.fde-metric-label {
+  font-size: 14px !important;
+  color: var(--fde-medium-gray) !important;
+  margin-top: 8px !important;
+}
+
+/* ===========================================
+   PIPELINE / FLOW VISUALIZATION
+   =========================================== */
+.fde-pipeline-step {
+  background-color: var(--fde-black) !important;
+  color: var(--fde-white) !important;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.fde-pipeline-arrow {
+  color: var(--fde-gray) !important;
+}
+
+/* ===========================================
+   LISTS - BEFORE/AFTER COMPARISON
+   =========================================== */
+.fde-list-negative li::before {
+  content: "✕";
+  color: var(--fde-gray);
+  margin-right: 8px;
+}
+
+.fde-list-positive li::before {
+  content: "✓";
+  color: var(--fde-black);
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+/* ===========================================
+   TAGS / BADGES
+   =========================================== */
+.fde-tag {
+  background-color: var(--fde-off-white) !important;
+  color: var(--fde-dark-gray) !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+/* ===========================================
+   BORDERS
+   =========================================== */
+.fde-border-top {
+  border-top: 1px solid var(--fde-light-gray) !important;
+}
+
+.fde-border-bottom {
+  border-bottom: 1px solid var(--fde-light-gray) !important;
+}
+
+.fde-border-top-thick {
+  border-top: 3px solid var(--fde-black) !important;
+}
+
+/* ===========================================
+   NARRATIVE SECTIONS
+   =========================================== */
+.fde-narrative-section {
+  padding: 60px 0;
+}
+
+.fde-narrative-item {
+  max-width: 800px;
+}
+
+.fde-narrative-label {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--fde-gray) !important;
+  margin-bottom: 16px;
+}
+
+.fde-narrative-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--fde-dark-gray) !important;
+  margin-bottom: 20px;
+  text-wrap: pretty;
+}
+
+/* ===========================================
+   LEGACY CLASSES (keeping for compatibility)
+   =========================================== */
+
+.fde-page .tp-portfolio-details-1-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--fde-black);
+}
+
+.fde-page .tp-portfolio-details-1-sub {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--fde-medium-gray);
+}
+
+.fde-page .tp-portfolio-details-1-content p {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--fde-dark-gray);
+}
+
+/* ===========================================
+   IMAGES
+   =========================================== */
+.fde-page img {
+  border-radius: 12px;
+}
+
+/* ===========================================
+   BUTTON
+   =========================================== */
+.fde-page .tp-portfolio-details-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  background: var(--fde-black);
+  color: var(--fde-white);
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.fde-page .tp-portfolio-details-btn:hover {
+  background: var(--fde-dark-gray);
+}
+
+/* ===========================================
+   NEXT CASE STUDY NAVIGATION
+   =========================================== */
+.fde-page .tp-portfolio-np-area {
+  padding: 80px 0;
+  border-top: 1px solid var(--fde-light-gray);
+}
+
+.fde-page .tp-portfolio-np-content span {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--fde-gray);
+}
+
+.fde-page .tp-portfolio-np-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 16px 0 8px;
+}
+
+.fde-page .tp-portfolio-np-title a {
+  color: var(--fde-black) !important;
+  text-decoration: none;
+}
+
+.fde-page .tp-portfolio-np-content p {
+  color: var(--fde-medium-gray);
+  font-size: 16px;
+  text-wrap: pretty;
+}
+
+/* ===========================================
+   FOOTER
+   =========================================== */
+.fde-page .tp-footer-area {
+  background-color: var(--fde-black) !important;
+}
+
+.fde-page .tp-footer-area * {
+  color: var(--fde-white) !important;
+}
+
+.fde-page .tp-footer-widget-title {
+  color: var(--fde-white) !important;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.fde-page .tp-footer-widget-title-sm {
+  color: var(--fde-gray) !important;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fde-page .tp-footer-widget-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fde-page .tp-footer-widget-menu ul li a {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  color: var(--fde-white) !important;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.fde-page .tp-footer-widget-menu ul li a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.fde-page .tp-footer-widget-info a,
+.fde-page .tp-footer-widget-info span {
+  display: block;
+  color: var(--fde-gray) !important;
+  font-size: 14px;
+  margin-bottom: 4px;
+  text-decoration: none;
+}
+
+.fde-page .tp-copyright-left p {
+  color: var(--fde-gray) !important;
+  font-size: 13px;
+}
+
+.fde-page .tp-copyright-right a {
+  color: var(--fde-gray) !important;
+  text-decoration: none;
+}
+
+.fde-page .tp-copyright-bottom-text h4 {
+  color: rgba(255,255,255,0.03) !important;
+  font-size: 120px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 40px 0;
+}
+
+
+/* ===========================================
+   WEBGL HOMEPAGE - CLICKABLE CARD FIX
+   =========================================== */
+
+/* Make entire case study card clickable with larger hotspot */
+.port-showcase-card-link {
+  display: block !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  color: inherit !important;
+  padding: 20px;
+  margin: -20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.port-showcase-card-link:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Ensure the content wrapper expands for better click area */
+.port-showcase-slider-content {
+  padding: 30px !important;
+  min-width: 320px;
+}
+
+/* Visual feedback on hover */
+.port-showcase-slider-item:hover .port-showcase-card-link {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+
+
+/* ===========================================
+   SWIPER FADE EFFECT - HIDE INACTIVE SLIDES
+   =========================================== */
+
+/* Force hide entire non-active slides */
+.swiper-slide:not(.swiper-slide-active) {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+/* Force show active slide */
+.swiper-slide.swiper-slide-active {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  z-index: 1 !important;
+}
+
+/* Also hide content on non-active slides (belt and suspenders) */
+.swiper-slide:not(.swiper-slide-active) .port-showcase-slider-content,
+.swiper-slide:not(.swiper-slide-active) .port-showcase-slider-item,
+.swiper-slide:not(.swiper-slide-active) .container {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Ensure active slide content is visible */
+.swiper-slide.swiper-slide-active .port-showcase-slider-content {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}

@@ -1,0 +1,2913 @@
+/* Import theme SCSS */
+@import '../../public/assets/scss/main.scss';
+
+/* ==========================================
+   DARK PAGE THEME OVERRIDES
+   ========================================== */
+.services-page,
+.advisory-page,
+.industries-page,
+.case-studies-page,
+.about-page,
+.contact-page,
+.healthcare-ai-consultant-page {
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+  a {
+    color: #ffffff;
+  }
+  /* CTA buttons with white background need dark text */
+  .cta-button {
+    color: #0a0a0a !important;
+  }
+}
+
+/* ==========================================
+   GLOBAL RESETS
+   ========================================== */
+* {
+  border-radius: 0 !important;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* ==========================================
+   OFFCANVAS / HEADER
+   ========================================== */
+body.offcanvas-open .portfolio-webgl-header {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.portfolio-webgl-header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: transparent !important;
+  padding: 20px 40px !important;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-webgl-header .header-inner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* ==========================================
+   WebGL SHOWCASE SLIDER STYLES
+   ========================================== */
+#showcase-slider-holder {
+  z-index: 5 !important;
+  position: relative !important;
+}
+
+#port-showcase-slider-main {
+  position: relative;
+  z-index: 2;
+}
+
+/* Company Logo - Inside Card */
+.port-showcase-logo-wrapper {
+  margin-bottom: 12px !important;
+}
+
+.port-showcase-logo-img {
+  max-height: 48px !important;
+  width: auto !important;
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+}
+
+/* Name as Logo on Home/Intro Slide */
+.port-showcase-name-logo {
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  letter-spacing: 1.2px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 12px !important;
+  font-family: 'Inter', 'Roboto', sans-serif !important;
+}
+
+/* H1: Name - Primary heading (largest) */
+.port-showcase-name-h1 {
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  letter-spacing: -1.5px !important;
+  line-height: 1.05 !important;
+  margin: 0 0 16px 0 !important;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* H2: Role/Title - Secondary heading */
+.port-showcase-role-h2 {
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  letter-spacing: 0 !important;
+  line-height: 1.3 !important;
+  margin: 0 0 16px 0 !important;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* Main content container - anchored bottom left */
+.port-showcase-slider-content {
+  position: absolute !important;
+  top: auto !important;
+  bottom: 100px !important;
+  left: 60px !important;
+  transform: none !important;
+  text-align: left !important;
+  background-color: rgba(0, 0, 0, 0.55) !important;
+  padding: 32px 36px !important;
+  max-width: 420px !important;
+  z-index: 10 !important;
+  color: #ffffff !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* CTA button wrapper */
+.port-showcase-cta-wrap {
+  margin-top: 12px;
+}
+
+/* Slider item */
+.port-showcase-slider-item {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 0;
+}
+
+/* Title styling - 60% of 29px */
+.port-showcase-slider-title-sm span {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px !important;
+  line-height: 1.1 !important;
+  color: #ffffff !important;
+  display: block !important;
+  margin-bottom: 4px !important;
+}
+
+.port-showcase-slider-title,
+.port-showcase-slider-title span {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Eyebrow label - smallest, subtle */
+.port-showcase-eyebrow {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.2em !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  margin-bottom: 12px !important;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  white-space: nowrap !important;
+}
+
+/* Description text - body copy */
+.port-showcase-slider-desc {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  line-height: 1.6 !important;
+  max-width: 380px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Logo in slides - 60% of 28px */
+.port-showcase-slider-logo {
+  max-height: 17px !important;
+  width: auto !important;
+  margin-bottom: 10px !important;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+/* Company logos grid */
+.company-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px 24px;
+  margin-top: 8px;
+}
+
+.company-logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 24px;
+}
+
+.company-logo-item img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+}
+
+/* Hide default pagination */
+.port-showcase-slider .swiper-pagination,
+.port-showcase-slider-fraction,
+.tp-slider-dot {
+  display: none !important;
+}
+
+/* Arrow buttons */
+.tp-showcase-arrow-box {
+  z-index: 20 !important;
+  position: absolute !important;
+  bottom: 40px !important;
+  left: 0 !important;
+  right: 0 !important;
+  padding: 0 60px !important;
+  pointer-events: none !important;
+}
+
+.tp-showcase-arrow-box button {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  color: #ffffff !important;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: opacity 0.2s ease !important;
+  pointer-events: auto !important;
+  padding: 20px 24px !important;
+  min-height: 60px !important;
+  min-width: 100px !important;
+  -webkit-tap-highlight-color: transparent !important;
+  touch-action: manipulation !important;
+}
+
+.tp-showcase-arrow-box button:hover {
+  opacity: 0.7 !important;
+}
+
+.tp-showcase-arrow-box button i {
+  font-size: 12px !important;
+  margin: 0 8px !important;
+}
+
+/* Tablet responsive */
+@media (max-width: 991px) {
+  .port-showcase-logo-img {
+    max-height: 40px !important;
+  }
+  
+  .port-showcase-logo-wrapper {
+    margin-bottom: 10px !important;
+  }
+  
+  .port-showcase-name-logo {
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .port-showcase-name-h1 {
+    font-size: 40px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .port-showcase-role-h2 {
+    font-size: 14px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .port-showcase-eyebrow {
+    font-size: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .port-showcase-slider-desc {
+    font-size: 13px !important;
+    max-width: 320px !important;
+  }
+  
+  .port-showcase-slider-content {
+    left: 40px !important;
+    bottom: 90px !important;
+    top: auto !important;
+    padding: 28px 32px !important;
+    max-width: 380px !important;
+    background-color: rgba(0, 0, 0, 0.55) !important;
+  }
+  
+  .port-showcase-slider-title-sm span {
+    font-size: 18px !important;
+    letter-spacing: -0.4px !important;
+  }
+  
+  .tp-showcase-arrow-box {
+    padding: 0 40px !important;
+    bottom: 30px !important;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .port-showcase-logo-img {
+    max-height: 32px !important;
+  }
+  
+  .port-showcase-logo-wrapper {
+    margin-bottom: 8px !important;
+  }
+  
+  .port-showcase-name-logo {
+    font-size: 14px !important;
+    margin-bottom: 8px !important;
+    letter-spacing: 0.6px !important;
+  }
+  
+  .port-showcase-name-h1 {
+    font-size: 32px !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .port-showcase-role-h2 {
+    font-size: 13px !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .port-showcase-eyebrow {
+    font-size: 9px !important;
+    margin-bottom: 8px !important;
+    white-space: normal !important;
+  }
+  
+  .port-showcase-slider-desc {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    max-width: 280px !important;
+  }
+  
+  .port-showcase-slider-content {
+    top: auto !important;
+    bottom: 80px !important;
+    left: 20px !important;
+    right: 20px !important;
+    max-width: calc(100% - 40px) !important;
+    padding: 24px !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+  }
+  
+  .port-showcase-cta-wrap {
+    margin-top: 16px !important;
+    gap: 20px !important;
+  }
+  
+  .cta-case-studies-btn {
+    padding: 12px 20px !important;
+    font-size: 12px !important;
+  }
+  
+  .cta-engagements-link {
+    font-size: 12px !important;
+  }
+  
+  .port-showcase-slider-title-sm span {
+    font-size: 16px !important;
+    letter-spacing: -0.3px !important;
+    line-height: 1.2 !important;
+  }
+  
+  .port-showcase-slider-subtitle {
+    font-size: 8px !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 6px !important;
+  }
+  
+  .tp-showcase-arrow-box {
+    padding: 0 20px !important;
+    bottom: 20px !important;
+  }
+  
+  .tp-showcase-arrow-box button {
+    font-size: 11px !important;
+    letter-spacing: 1.5px !important;
+    padding: 16px 20px !important;
+    min-height: 52px !important;
+    min-width: 80px !important;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .port-showcase-logo-img {
+    max-height: 28px !important;
+  }
+  
+  .port-showcase-logo-wrapper {
+    margin-bottom: 6px !important;
+  }
+  
+  .port-showcase-name-logo {
+    font-size: 11px !important;
+    margin-bottom: 6px !important;
+    letter-spacing: 0.3px !important;
+  }
+  
+  .port-showcase-name-h1 {
+    font-size: 28px !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .port-showcase-role-h2 {
+    font-size: 12px !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .port-showcase-eyebrow {
+    font-size: 8px !important;
+    margin-bottom: 6px !important;
+  }
+  
+  .port-showcase-slider-desc {
+    font-size: 11px !important;
+  }
+  
+  .port-showcase-slider-content {
+    bottom: 70px !important;
+    left: 16px !important;
+    right: 16px !important;
+    padding: 20px !important;
+    max-width: calc(100% - 32px) !important;
+    background-color: rgba(0, 0, 0, 0.65) !important;
+  }
+  
+  .port-showcase-cta-wrap {
+    margin-top: 14px !important;
+    gap: 16px !important;
+  }
+  
+  .cta-case-studies-btn {
+    padding: 10px 18px !important;
+    font-size: 11px !important;
+  }
+  
+  .port-showcase-slider-title-sm span {
+    font-size: 14px !important;
+  }
+  
+  .port-showcase-slider-subtitle {
+    font-size: 7px !important;
+    letter-spacing: 0.8px !important;
+    margin-bottom: 5px !important;
+  }
+  
+  .tp-showcase-arrow-box {
+    bottom: 16px !important;
+    padding: 0 12px !important;
+  }
+  
+  .tp-showcase-arrow-box button {
+    padding: 14px 16px !important;
+    min-height: 48px !important;
+    min-width: 70px !important;
+    font-size: 10px !important;
+  }
+}
+
+/* ==========================================
+   FDE CASE STUDY PAGE STYLES
+   ========================================== */
+.fde-page {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.fde-page p {
+  color: #4a4a4a;
+}
+
+.fde-page h1,
+.fde-page h2,
+.fde-page h3,
+.fde-page h4,
+.fde-page h5,
+.fde-page h6 {
+  color: #1a1a1a;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Section backgrounds */
+.fde-section-white {
+  background-color: #ffffff;
+}
+
+.fde-section-gray {
+  background-color: #f8f9fa;
+}
+
+.fde-border-top {
+  border-top: 1px solid #e5e5e5;
+}
+
+.fde-border-top-thick {
+  border-top: 3px solid #1a1a1a;
+}
+
+/* Section label */
+.fde-section-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999999;
+  margin-bottom: 16px;
+}
+
+/* Narrative text */
+.fde-narrative-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin-bottom: 16px;
+}
+
+/* Text colors */
+.fde-text-muted {
+  color: #999999 !important;
+}
+
+.fde-text-secondary {
+  color: #666666 !important;
+}
+
+/* Cards */
+.fde-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding: 24px;
+}
+
+/* Metrics */
+.fde-metric-value {
+  font-size: 48px;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.fde-metric-label {
+  font-size: 13px;
+  color: #999999;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Pipeline steps */
+.fde-pipeline-step {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.fde-pipeline-arrow {
+  color: #cccccc;
+  margin: 0 4px;
+}
+
+/* FDE Page Images */
+.fde-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fde-page .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.fde-page .row > [class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* FDE Case Study Image Styling */
+.fde-case-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Override Next.js Image component styles in FDE pages */
+.fde-page section img {
+  display: block;
+}
+
+/* FDE Page Mobile Responsive */
+@media (max-width: 991px) {
+  .fde-page .row.align-items-center {
+    flex-direction: column;
+  }
+  
+  .fde-page .col-lg-6,
+  .fde-page .col-lg-7,
+  .fde-page .col-lg-5 {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .fde-page section img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 400px !important;
+    object-fit: cover !important;
+    margin-top: 32px;
+  }
+  
+  .fde-metric-value {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fde-page section {
+    padding: 60px 0 !important;
+  }
+  
+  .fde-page section:first-of-type {
+    padding-top: 140px !important;
+  }
+  
+  .fde-page h1 {
+    font-size: 56px !important;
+  }
+  
+  .fde-page h3 {
+    font-size: 22px !important;
+  }
+  
+  .fde-card .row > [class*="col-"] {
+    border-right: none !important;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 16px 0 !important;
+  }
+  
+  .fde-card .row > [class*="col-"]:last-child {
+    border-bottom: none;
+  }
+}
+
+/* ==========================================
+   FDE ACCORDION CASE STUDY STYLES
+   ========================================== */
+.fde-accordion-page.fde-page {
+  background-color: #ffffff !important;
+}
+
+.fde-accordion-page.fde-page main {
+  background-color: #ffffff !important;
+}
+
+/* Reset all inherited styles */
+.fde-accordion-page * {
+  box-sizing: border-box !important;
+}
+
+.fde-accordion-page img {
+  max-width: none !important;
+}
+
+/* Hero Section */
+.fde-hero-section {
+  padding: 100px 0 60px !important;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+  overflow-x: hidden !important;
+}
+
+/* Logo container - sets the alignment baseline */
+.fde-logo-container {
+  max-width: 1200px !important;
+  margin: 0 auto 32px !important;
+  padding: 0 60px 24px !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+.fde-logo-container img,
+.fde-logo-container .fde-client-logo-img {
+  width: 150px !important;
+  height: auto !important;
+}
+
+/* Hero container - align to logo */
+.fde-hero-container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: 1fr 450px !important;
+  gap: 60px !important;
+  align-items: start !important;
+  padding: 0 60px !important;
+}
+
+.fde-hero-left {
+  max-width: 600px !important;
+  overflow: hidden !important;
+}
+
+.fde-hero-title {
+  font-size: 96px !important;
+  font-weight: 800 !important;
+  line-height: 0.95 !important;
+  letter-spacing: -3px !important;
+  color: #1a1a1a !important;
+  margin-bottom: 16px !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.fde-hero-subtitle {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 1.4 !important;
+  color: #4a4a4a !important;
+  margin-bottom: 32px !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+}
+
+/* Mobile responsive for hero subtitle */
+@media (max-width: 768px) {
+  .fde-hero-subtitle {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+  }
+  
+  .fde-hero-title {
+    font-size: 48px !important;
+    letter-spacing: -1px !important;
+  }
+  
+  .fde-hero-left {
+    max-width: 100% !important;
+    padding: 0 16px !important;
+  }
+}
+
+.fde-hero-meta {
+  border-top: 1px solid #e5e5e5 !important;
+}
+
+.fde-accordion-page .fde-hero-right img,
+.fde-hero-right img {
+  width: 450px !important;
+  height: 260px !important;
+  object-fit: cover !important;
+  max-width: 450px !important;
+  max-height: 260px !important;
+}
+
+.fde-hero-right {
+  max-width: 450px !important;
+  overflow: hidden !important;
+}
+
+/* Metrics Bar - align to logo */
+.fde-metrics-bar {
+  max-width: 1200px !important;
+  margin: 48px auto 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 24px !important;
+  padding: 32px 60px 0 !important;
+  border-top: 1px solid #e5e5e5 !important;
+}
+
+.fde-metric-item {
+  text-align: left !important;
+}
+
+.fde-metric-number {
+  display: block !important;
+  font-size: 36px !important;
+  font-weight: 800 !important;
+  color: #1a1a1a !important;
+  line-height: 1 !important;
+  margin-bottom: 8px !important;
+}
+
+.fde-metric-desc {
+  font-size: 13px !important;
+  color: #999 !important;
+}
+
+/* Accordion Wrapper - align to logo */
+.fde-accordion-wrapper {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 60px 80px !important;
+}
+
+/* Full-width background for accordion area */
+.fde-accordion-bg {
+  background-color: #f7f7f7 !important;
+  padding-top: 20px !important;
+}
+
+/* Accordion Section */
+.fde-accordion-section {
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+.fde-accordion-header {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 32px 0 !important;
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  text-align: left !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.fde-accordion-header:hover {
+  opacity: 0.7 !important;
+}
+
+.fde-accordion-header-content {
+  flex: 1 !important;
+}
+
+.fde-accordion-title {
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  color: #1a1a1a !important;
+  margin: 0 0 8px 0 !important;
+  line-height: 1 !important;
+}
+
+.fde-accordion-subtitle {
+  font-size: 14px !important;
+  color: #999 !important;
+  margin: 0 !important;
+}
+
+.fde-accordion-icon {
+  font-size: 64px !important;
+  font-weight: 300 !important;
+  color: #1a1a1a !important;
+  width: 72px !important;
+  height: 72px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Accordion Content */
+.fde-accordion-content {
+  max-height: 0 !important;
+  overflow: hidden !important;
+  transition: max-height 0.4s ease, padding 0.4s ease !important;
+}
+
+.fde-accordion-content.open {
+  max-height: 4000px !important;
+  padding-bottom: 48px !important;
+}
+
+/* Two Column Layout */
+.fde-accordion-page .fde-two-column,
+.fde-two-column {
+  display: grid !important;
+  grid-template-columns: 1fr 450px !important;
+  gap: 48px !important;
+  align-items: start !important;
+  width: 100% !important;
+}
+
+.fde-column-text h3 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #1a1a1a !important;
+  margin-bottom: 20px !important;
+  line-height: 1.3 !important;
+}
+
+.fde-column-text p {
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  color: #4a4a4a !important;
+  margin-bottom: 16px !important;
+}
+
+.fde-accordion-page .fde-column-image img,
+.fde-column-image img {
+  width: 450px !important;
+  height: 260px !important;
+  object-fit: cover !important;
+  max-width: 450px !important;
+}
+
+/* Next.js Image wrapper overrides */
+.fde-accordion-page .fde-column-image,
+.fde-accordion-page .fde-hero-right {
+  width: 450px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Inline Metrics */
+.fde-inline-metrics {
+  display: flex !important;
+  gap: 32px !important;
+  margin-top: 24px !important;
+  padding-top: 24px !important;
+  border-top: 1px solid #e5e5e5 !important;
+}
+
+.fde-inline-metric {
+  text-align: left !important;
+}
+
+.fde-inline-metric strong {
+  display: block !important;
+  font-size: 28px !important;
+  font-weight: 800 !important;
+  color: #1a1a1a !important;
+}
+
+.fde-inline-metric span {
+  font-size: 12px !important;
+  color: #999 !important;
+}
+
+/* Pipeline */
+.fde-pipeline {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex-wrap: wrap !important;
+  margin: 24px 0 16px !important;
+}
+
+.fde-pipeline .fde-pipeline-step {
+  background-color: #f0f0f0 !important;
+  padding: 8px 16px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #1a1a1a !important;
+}
+
+.fde-pipeline .fde-pipeline-arrow {
+  color: #ccc !important;
+}
+
+.fde-sources {
+  font-size: 13px !important;
+  color: #999 !important;
+}
+
+/* Capabilities */
+.fde-capabilities {
+  margin-top: 24px !important;
+  padding-top: 24px !important;
+  border-top: 1px solid #e5e5e5 !important;
+}
+
+.fde-capabilities div {
+  margin-bottom: 12px !important;
+  font-size: 14px !important;
+  color: #4a4a4a !important;
+}
+
+.fde-capabilities strong {
+  color: #1a1a1a !important;
+}
+
+/* Before/After */
+.fde-before-after {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 32px !important;
+  margin-top: 24px !important;
+  padding-top: 24px !important;
+  border-top: 1px solid #e5e5e5 !important;
+}
+
+.fde-before h4,
+.fde-after h4 {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 12px !important;
+}
+
+.fde-before h4 {
+  color: #999 !important;
+}
+
+.fde-after h4 {
+  color: #1a1a1a !important;
+}
+
+.fde-before ul,
+.fde-after ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.fde-before li,
+.fde-after li {
+  font-size: 14px !important;
+  margin-bottom: 8px !important;
+}
+
+.fde-before li {
+  color: #999 !important;
+}
+
+.fde-after li {
+  color: #1a1a1a !important;
+}
+
+/* Impact Metrics */
+.fde-impact-metrics {
+  margin-top: 24px !important;
+  padding-top: 24px !important;
+  border-top: 1px solid #e5e5e5 !important;
+}
+
+.fde-impact-metric {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-bottom: 16px !important;
+  padding-bottom: 16px !important;
+  border-bottom: 1px solid #f0f0f0 !important;
+}
+
+.fde-impact-metric:last-child {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.fde-impact-before {
+  font-size: 16px !important;
+  color: #999 !important;
+  min-width: 80px !important;
+}
+
+.fde-impact-arrow {
+  color: #ccc !important;
+}
+
+.fde-impact-after {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #1a1a1a !important;
+  min-width: 80px !important;
+}
+
+.fde-impact-label {
+  font-size: 13px !important;
+  color: #999 !important;
+  margin-left: auto !important;
+}
+
+/* Chart Section */
+.fde-section-content {
+  width: 100% !important;
+}
+
+.fde-chart-section {
+  margin-top: 48px !important;
+  padding-top: 32px !important;
+  border-top: 1px solid #e5e5e5 !important;
+}
+
+.fde-chart-header {
+  margin-bottom: 24px !important;
+}
+
+.fde-chart-header h4 {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #1a1a1a !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.fde-chart-header p {
+  font-size: 14px !important;
+  color: #666 !important;
+  margin: 0 !important;
+  line-height: 1.5 !important;
+}
+
+.fde-chart-container {
+  background-color: #ffffff !important;
+  border: 1px solid #e5e5e5 !important;
+  padding: 24px !important;
+  overflow-x: auto !important;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .fde-hero-section {
+    padding: 140px 0 48px !important;
+  }
+  
+  .fde-logo-container {
+    padding: 0 32px 24px !important;
+  }
+  
+  .fde-hero-container {
+    grid-template-columns: 1fr 380px !important;
+    gap: 40px !important;
+    padding: 0 32px !important;
+  }
+  
+  .fde-hero-right {
+    max-width: 380px !important;
+  }
+  
+  .fde-hero-right img,
+  .fde-accordion-page .fde-hero-right img {
+    width: 380px !important;
+    max-width: 380px !important;
+    height: 220px !important;
+  }
+  
+  .fde-metrics-bar {
+    grid-template-columns: repeat(4, 1fr) !important;
+    padding: 32px 32px 0 !important;
+  }
+  
+  .fde-accordion-wrapper {
+    padding: 0 32px 60px !important;
+  }
+  
+  .fde-two-column {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  
+  .fde-column-image img {
+    width: 100% !important;
+    max-width: 450px !important;
+    height: 260px !important;
+  }
+  
+  .fde-accordion-title {
+    font-size: 36px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .fde-logo-container {
+    padding: 0 20px 24px !important;
+  }
+  
+  .fde-hero-container {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+    padding: 0 20px !important;
+  }
+  
+  .fde-hero-right {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  .fde-hero-right img,
+  .fde-accordion-page .fde-hero-right img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 280px !important;
+  }
+  
+  .fde-metrics-bar {
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding: 32px 20px 0 !important;
+  }
+  
+  .fde-accordion-wrapper {
+    padding: 0 20px 60px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .fde-hero-section {
+    padding: 100px 0 32px !important;
+  }
+  
+  .fde-logo-container {
+    padding: 0 20px 20px !important;
+    margin: 0 auto 24px !important;
+  }
+  
+  .fde-logo-container img,
+  .fde-logo-container .fde-client-logo-img {
+    width: 100px !important;
+    max-width: 100px !important;
+  }
+  
+  .fde-hero-title {
+    font-size: 48px !important;
+    letter-spacing: -2px !important;
+  }
+  
+  .fde-hero-subtitle {
+    font-size: 18px !important;
+  }
+  
+  .fde-metrics-bar {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+  
+  .fde-metric-number {
+    font-size: 28px !important;
+  }
+  
+  .fde-accordion-wrapper {
+    padding: 0 20px 48px !important;
+  }
+  
+  .fde-accordion-header {
+    padding: 24px 0 !important;
+  }
+  
+  .fde-accordion-title {
+    font-size: 28px !important;
+  }
+  
+  .fde-accordion-subtitle {
+    font-size: 12px !important;
+  }
+  
+  .fde-accordion-icon {
+    font-size: 48px !important;
+    width: 56px !important;
+    height: 56px !important;
+  }
+  
+  .fde-column-text h3 {
+    font-size: 20px !important;
+  }
+  
+  .fde-inline-metrics {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+  
+  .fde-inline-metric {
+    text-align: left !important;
+    display: flex !important;
+    align-items: baseline !important;
+    gap: 8px !important;
+  }
+  
+  .fde-inline-metric strong {
+    font-size: 24px !important;
+  }
+  
+  .fde-before-after {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  .fde-impact-metric {
+    flex-wrap: wrap !important;
+  }
+  
+  .fde-impact-label {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 4px !important;
+  }
+  
+  .fde-two-column,
+  .fde-accordion-page .fde-two-column {
+    display: block !important;
+  }
+  
+  .fde-column-image {
+    margin-top: 24px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .fde-column-image img,
+  .fde-accordion-page .fde-column-image img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 220px !important;
+  }
+  
+  .fde-pipeline {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  
+  .fde-pipeline .fde-pipeline-arrow {
+    transform: rotate(90deg) !important;
+    margin: 4px 0 !important;
+  }
+  
+  .fde-chart-section {
+    margin-top: 24px !important;
+    padding-top: 20px !important;
+  }
+  
+  .fde-chart-header h4 {
+    font-size: 16px !important;
+  }
+  
+  .fde-chart-header p {
+    font-size: 13px !important;
+  }
+  
+  .fde-chart-container {
+    padding: 12px !important;
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .fde-hero-section {
+    padding: 70px 0 24px !important;
+    overflow-x: hidden !important;
+  }
+  
+  .fde-logo-container {
+    padding: 0 16px 16px !important;
+  }
+  
+  .fde-logo-container img,
+  .fde-logo-container .fde-client-logo-img {
+    width: 80px !important;
+    max-width: 80px !important;
+  }
+  
+  .fde-hero-container {
+    padding: 0 16px !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+  
+  .fde-hero-left {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  .fde-hero-title {
+    font-size: 36px !important;
+    letter-spacing: -1px !important;
+    word-break: break-word !important;
+  }
+  
+  .fde-hero-subtitle {
+    font-size: 15px !important;
+    word-break: break-word !important;
+  }
+  
+  .fde-metrics-bar {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+    padding: 24px 16px 0 !important;
+  }
+  
+  .fde-metric-number {
+    font-size: 24px !important;
+  }
+  
+  .fde-metric-desc {
+    font-size: 11px !important;
+  }
+  
+  .fde-accordion-wrapper {
+    padding: 0 16px 40px !important;
+  }
+  
+  .fde-accordion-title {
+    font-size: 24px !important;
+  }
+  
+  .fde-accordion-subtitle {
+    font-size: 11px !important;
+  }
+  
+  .fde-column-text h3 {
+    font-size: 18px !important;
+  }
+  
+  .fde-column-text p {
+    font-size: 14px !important;
+  }
+}
+
+/* ==========================================
+   RESUME PAGE STYLES
+   ========================================== */
+.resume-hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  padding: 140px 0 60px;
+}
+
+.resume-section {
+  padding: 60px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.resume-section:last-child {
+  border-bottom: none;
+}
+
+.experience-item {
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+}
+
+.achievement-card {
+  background: rgba(255,255,255,0.03);
+  padding: 24px;
+  height: 100%;
+}
+
+.skill-category {
+  margin-bottom: 24px;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.08);
+  padding: 6px 12px;
+  margin: 4px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+}
+
+/* ==========================================
+   OFFCANVAS MENU FIXES
+   ========================================== */
+.tp-offcanvas-2-area ul,
+.tp-offcanvas-2-area ol,
+.tp-offcanvas-menu ul,
+.tp-offcanvas-menu ol {
+  list-style: none !important;
+  counter-reset: none !important;
+}
+
+.tp-offcanvas-2-area li::before,
+.tp-offcanvas-menu li::before {
+  display: none !important;
+  content: none !important;
+  counter-increment: none !important;
+}
+
+.tp-offcanvas-menu ul li {
+  counter-increment: none !important;
+}
+
+.tp-offcanvas-menu ul li::before {
+  display: none !important;
+}
+
+.offcanvas-2-black-bg .fde-menu-link,
+.offcanvas-2-black-bg .fde-menu-button,
+.offcanvas-2-black-bg .fde-submenu-link {
+  color: #ffffff !important;
+}
+
+.offcanvas-2-black-bg .fde-submenu li {
+  border-bottom-color: rgba(255,255,255,0.15) !important;
+}
+
+.offcanvas-2-black-bg .tp-offcanvas-2-right a {
+  color: #ffffff !important;
+}
+
+.offcanvas-2-black-bg .tp-offcanvas-2-right svg {
+  fill: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+  .tp-offcanvas-2-left {
+    overflow-y: auto !important;
+    max-height: 100vh !important;
+    padding-bottom: 100px !important;
+  }
+}
+
+
+/* ==========================================
+   FDE CHART SECTION STYLES
+   ========================================== */
+.fde-section-content {
+  width: 100% !important;
+}
+
+.fde-chart-section {
+  margin-top: 48px !important;
+  padding-top: 32px !important;
+  border-top: 1px solid #e5e5e5 !important;
+}
+
+.fde-chart-header {
+  margin-bottom: 24px !important;
+}
+
+.fde-chart-header h4 {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #1a1a1a !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.fde-chart-header p {
+  font-size: 14px !important;
+  color: #666 !important;
+  margin: 0 !important;
+  line-height: 1.5 !important;
+}
+
+.fde-chart-container {
+  background-color: #ffffff !important;
+  border: 1px solid #e5e5e5 !important;
+  padding: 24px !important;
+  overflow-x: auto !important;
+}
+
+
+/* Ensure charts scale properly */
+.fde-chart-container > div {
+  max-width: 100% !important;
+}
+
+.fde-chart-container svg {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Chart responsive */
+@media (max-width: 1024px) {
+  .fde-chart-section {
+    margin-top: 32px !important;
+    padding-top: 24px !important;
+  }
+  
+  .fde-chart-container {
+    padding: 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .fde-chart-section {
+    margin-top: 24px !important;
+    padding-top: 20px !important;
+  }
+  
+  .fde-chart-header h4 {
+    font-size: 16px !important;
+  }
+  
+  .fde-chart-header p {
+    font-size: 13px !important;
+  }
+  
+  .fde-chart-container {
+    padding: 12px !important;
+    margin-left: -12px !important;
+    margin-right: -12px !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+}
+
+/* Accordion content needs more max-height for charts */
+.fde-accordion-content.open {
+  max-height: 4000px !important;
+}
+
+
+/* ==========================================
+   PORTFOLIO WEBGL SHOWCASE - BOTTOM LEFT ALIGN
+   ========================================== */
+.port-showcase-slider-content {
+  top: auto !important;
+  bottom: 100px !important;
+  left: 60px !important;
+  transform: none !important;
+}
+
+@media (max-width: 768px) {
+  .port-showcase-slider-content {
+    top: auto !important;
+    bottom: 80px !important;
+    left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+
+/* Eyebrow label */
+.port-showcase-eyebrow {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.28em !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  margin-bottom: 12px !important;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* Specialization line - visually subtle, HTML-visible for SEO */
+.port-showcase-specialization {
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+  color: rgba(255, 255, 255, 0.55) !important;
+  margin-top: 20px !important;
+  padding-top: 16px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* Case Studies CTA Button */
+.cta-case-studies-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  background-color: #ffffff;
+  color: #000000 !important;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.cta-case-studies-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Engagements Link */
+.cta-engagements-link {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
+  transition: color 0.2s ease !important;
+  white-space: nowrap !important;
+}
+
+.cta-engagements-link:hover {
+  color: #ffffff !important;
+}
+
+/* CTA wrapper flex layout */
+.port-showcase-cta-wrap {
+  display: flex !important;
+  align-items: center !important;
+  gap: 24px !important;
+  margin-top: 24px !important;
+}
+
+/* ==========================================
+   ENHANCED MOBILE OPTIMIZATION
+   ========================================== */
+
+/* WebGL Slider - Mobile Improvements */
+@media (max-width: 768px) {
+  /* Ensure slider fills viewport */
+  #port-showcase-slider-main {
+    min-height: 100vh !important;
+    min-height: 100dvh !important;
+  }
+  
+  #canvas-slider {
+    position: fixed !important;
+    top: 0 !important;
+    left: -15% !important;
+    width: 130% !important;
+    height: 100% !important;
+  }
+  
+  #canvas-slider canvas {
+    object-position: right center !important;
+  }
+  
+  /* Card positioning - bottom left, compact */
+  .port-showcase-slider-content {
+    position: fixed !important;
+    bottom: 70px !important;
+    left: 16px !important;
+    right: auto !important;
+    top: auto !important;
+    max-width: 60% !important;
+    padding: 20px !important;
+    background-color: rgba(0, 0, 0, 0.75) !important;
+  }
+  
+  /* Arrow navigation - mobile friendly */
+  .tp-showcase-arrow-box {
+    position: fixed !important;
+    bottom: 20px !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 0 16px !important;
+    z-index: 100 !important;
+  }
+  
+  .tp-showcase-arrow-box button {
+    padding: 12px 20px !important;
+    font-size: 11px !important;
+  }
+  
+  /* Hide header on WebGL page for more space */
+  .portfolio-webgl-page .tp-header-area {
+    background: transparent !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #canvas-slider {
+    left: -25% !important;
+    width: 150% !important;
+  }
+  
+  .port-showcase-slider-content {
+    bottom: 65px !important;
+    left: 12px !important;
+    right: auto !important;
+    max-width: 75% !important;
+    padding: 16px !important;
+  }
+  
+  .tp-showcase-arrow-box {
+    bottom: 16px !important;
+    padding: 0 12px !important;
+  }
+  
+  .tp-showcase-arrow-box button {
+    padding: 10px 16px !important;
+    font-size: 10px !important;
+  }
+}
+
+/* ==========================================
+   CASE STUDY PAGES - MOBILE IMPROVEMENTS
+   ========================================== */
+
+/* Charts - Mobile Scroll & Scale */
+@media (max-width: 768px) {
+  .fde-chart-container {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: 16px 12px !important;
+  }
+  
+  /* Ensure charts have minimum width for readability */
+  .fde-chart-container > div {
+    min-width: 500px !important;
+  }
+  
+  /* Scale down chart fonts */
+  .fde-chart-container svg text {
+    font-size: 10px !important;
+  }
+  
+  /* Hero section spacing */
+  .fde-hero-section {
+    padding: 80px 0 24px !important;
+  }
+  
+  /* Metrics - 2 column on mobile */
+  .fde-metrics-bar {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+  
+  /* Accordion sections */
+  .fde-accordion-header {
+    padding: 20px 0 !important;
+  }
+  
+  .fde-accordion-content.open {
+    padding-bottom: 32px !important;
+  }
+  
+  /* Text readability */
+  .fde-column-text p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  
+  /* Pipeline on mobile - vertical */
+  .fde-pipeline {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+  }
+  
+  .fde-pipeline .fde-pipeline-step {
+    text-align: center !important;
+    padding: 10px 16px !important;
+  }
+  
+  .fde-pipeline .fde-pipeline-arrow {
+    text-align: center !important;
+    padding: 4px 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Even tighter spacing on small phones */
+  .fde-hero-section {
+    padding: 70px 0 20px !important;
+  }
+  
+  .fde-hero-title {
+    font-size: 36px !important;
+    letter-spacing: -1px !important;
+  }
+  
+  .fde-hero-subtitle {
+    font-size: 15px !important;
+  }
+  
+  .fde-accordion-title {
+    font-size: 22px !important;
+  }
+  
+  .fde-metric-number {
+    font-size: 22px !important;
+  }
+  
+  .fde-metric-desc {
+    font-size: 10px !important;
+  }
+  
+  /* Charts scrollable with hint */
+  .fde-chart-container {
+    position: relative !important;
+  }
+  
+  .fde-chart-container::after {
+    content: '← Scroll →';
+    position: absolute;
+    bottom: 4px;
+    right: 8px;
+    font-size: 9px;
+    color: #999;
+    pointer-events: none;
+  }
+}
+
+/* ==========================================
+   TOUCH FRIENDLY ELEMENTS
+   ========================================== */
+@media (max-width: 768px) {
+  /* Larger tap targets */
+  .fde-accordion-header {
+    min-height: 60px !important;
+  }
+  
+  .fde-accordion-icon {
+    width: 56px !important;
+    height: 56px !important;
+    font-size: 48px !important;
+  }
+  
+  /* Button sizing */
+  .cta-case-studies-btn {
+    min-width: 120px !important;
+    min-height: 44px !important;
+    line-height: 44px !important;
+    font-size: 11px !important;
+  }
+  
+  /* Links and interactive elements */
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* ==========================================
+   LANDSCAPE MOBILE FIXES
+   ========================================== */
+@media (max-height: 500px) and (orientation: landscape) {
+  .port-showcase-slider-content {
+    bottom: 50px !important;
+    padding: 12px 16px !important;
+  }
+  
+  .port-showcase-slider-title-sm span {
+    font-size: 20px !important;
+  }
+  
+  .port-showcase-slider-desc {
+    display: none !important;
+  }
+  
+  .tp-showcase-arrow-box {
+    bottom: 10px !important;
+  }
+  
+  .fde-hero-section {
+    padding: 60px 0 20px !important;
+  }
+}
+
+/* ==========================================
+   PREVENT HORIZONTAL OVERFLOW
+   ========================================== */
+html, body {
+  overflow-x: hidden !important;
+}
+
+.fde-page,
+.fde-accordion-page {
+  overflow-x: hidden !important;
+}
+
+/* Contain images */
+.fde-page img,
+.fde-accordion-page img {
+  max-width: 100% !important;
+}
+
+/* ==========================================
+   SMOOTH SCROLLING
+   ========================================== */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ==========================================
+   SAFE AREA INSETS (iPhone X+)
+   ========================================== */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .port-showcase-slider-content {
+    padding-bottom: calc(20px + env(safe-area-inset-bottom)) !important;
+  }
+  
+  .tp-showcase-arrow-box {
+    padding-bottom: env(safe-area-inset-bottom) !important;
+  }
+  
+  .fde-accordion-wrapper {
+    padding-bottom: calc(40px + env(safe-area-inset-bottom)) !important;
+  }
+}
+
+/* ==========================================
+   CASE STUDY MOBILE OPTIMIZATIONS
+   Additional responsive styles for inline grid layouts
+   ========================================== */
+@media (max-width: 991px) {
+  /* SLA/Metrics grids - force 2 columns */
+  .fde-accordion-page [style*="gridTemplateColumns: 'repeat(4"],
+  .fde-accordion-page [style*="gridTemplateColumns: repeat(4"],
+  .fde-accordion-page [style*="grid-template-columns: repeat(4"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  /* Hero sections */
+  .fde-hero-container {
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+  
+  .fde-hero-left,
+  .fde-hero-right {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .fde-hero-right {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  
+  .fde-hero-right img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Accordion content grids */
+  .fde-accordion-content .row {
+    flex-direction: column !important;
+  }
+  
+  .fde-accordion-content [class*="col-"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 24px !important;
+  }
+  
+  /* Chart containers */
+  .fde-chart-section {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  
+  .fde-chart-section > div {
+    min-width: 300px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Force single column for all inline grids */
+  .fde-accordion-page [style*="gridTemplateColumns"],
+  .fde-accordion-page [style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Reduce padding on accordion content */
+  .fde-accordion-content {
+    padding: 24px 16px !important;
+  }
+  
+  /* Hero title sizing */
+  .fde-hero-title {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+  }
+  
+  .fde-hero-subtitle {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+  }
+  
+  /* Metric cards */
+  .fde-accordion-page [style*="textAlign: 'center'"][style*="padding: '16px'"] {
+    padding: 12px !important;
+  }
+  
+  /* Images in content */
+  .fde-accordion-content img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 16px !important;
+  }
+  
+  /* Tables and data grids */
+  .fde-accordion-page table {
+    display: block !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    font-size: 13px !important;
+  }
+  
+  /* Lists inside accordions */
+  .fde-accordion-content ul,
+  .fde-accordion-content ol {
+    padding-left: 20px !important;
+  }
+  
+  .fde-accordion-content li {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens */
+  .fde-hero-section {
+    padding: 80px 16px 24px !important;
+  }
+  
+  .fde-hero-title {
+    font-size: 26px !important;
+  }
+  
+  .fde-hero-subtitle {
+    font-size: 16px !important;
+  }
+  
+  .fde-accordion-header {
+    padding: 16px !important;
+  }
+  
+  .fde-accordion-title {
+    font-size: 15px !important;
+  }
+  
+  /* Smaller charts */
+  .fde-chart-section svg {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* ==========================================
+   TOOLCHAIN AND ABOUT PAGE MOBILE
+   ========================================== */
+@media (max-width: 768px) {
+  .toolchain-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  
+  .toolchain-row {
+    flex-direction: column !important;
+    gap: 4px !important;
+  }
+  
+  .toolchain-label {
+    min-width: auto !important;
+  }
+  
+  .how-i-work-content {
+    font-size: 15px !important;
+  }
+  
+  .failure-mode-callout {
+    padding: 16px !important;
+    font-size: 14px !important;
+  }
+  
+  .leveling-statement {
+    padding: 16px !important;
+    font-size: 13px !important;
+  }
+}
+
+/* ==========================================
+   CERTIFICATIONS PAGE - BASE STYLES
+   ========================================== */
+.certifications-page {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* Hero Section */
+.cert-hero {
+  padding: 140px 20px 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.cert-hero-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.cert-hero-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #999;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.cert-hero h1 {
+  font-size: 64px;
+  font-weight: 800;
+  color: #1a1a1a;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 24px;
+  word-wrap: break-word;
+}
+
+.cert-hero-desc {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+  max-width: 700px;
+  margin: 0;
+}
+
+/* Grid Section */
+.cert-grid-section {
+  padding: 80px 20px;
+  background-color: #f8f8f8;
+}
+
+.cert-grid-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.cert-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding: 32px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cert-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.cert-card-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.cert-card-category {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #999;
+  word-wrap: break-word;
+}
+
+.cert-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  word-wrap: break-word;
+}
+
+.cert-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cert-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cert-check-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  opacity: 0.5;
+}
+
+/* Stack Section */
+.cert-stack-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.cert-stack-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+}
+
+.cert-stack-container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+.cert-stack-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+  margin: 0;
+}
+
+.cert-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.cert-stack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.cert-stack-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.cert-stack-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+}
+
+.cert-stack-subtitle {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+/* ==========================================
+   CERTIFICATIONS PAGE - TABLET (max-width: 991px)
+   ========================================== */
+@media (max-width: 991px) {
+  .cert-hero {
+    padding: 130px 20px 50px;
+  }
+  
+  .cert-hero h1 {
+    font-size: 52px;
+    letter-spacing: -1.5px;
+  }
+  
+  .cert-hero-desc {
+    font-size: 16px;
+  }
+  
+  .cert-grid-section {
+    padding: 60px 20px;
+  }
+  
+  .cert-grid {
+    gap: 20px;
+  }
+  
+  .cert-card {
+    padding: 24px;
+  }
+  
+  .cert-card h3 {
+    font-size: 18px;
+  }
+  
+  .cert-stack-section {
+    padding: 60px 20px;
+  }
+  
+  .cert-stack-container h2 {
+    font-size: 32px;
+  }
+  
+  .cert-stack-grid {
+    gap: 24px;
+    margin-top: 40px;
+  }
+}
+
+/* ==========================================
+   CERTIFICATIONS PAGE - MOBILE (max-width: 768px)
+   ========================================== */
+@media (max-width: 768px) {
+  .cert-hero {
+    padding: 110px 16px 40px;
+  }
+  
+  .cert-hero-label {
+    font-size: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .cert-hero h1 {
+    font-size: 36px;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+  }
+  
+  .cert-hero-desc {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .cert-grid-section {
+    padding: 40px 16px;
+  }
+  
+  .cert-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .cert-card {
+    padding: 20px;
+  }
+  
+  .cert-card-header {
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .cert-card-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .cert-card-category {
+    font-size: 9px;
+  }
+  
+  .cert-card h3 {
+    font-size: 17px;
+    margin-bottom: 16px;
+  }
+  
+  .cert-card li {
+    font-size: 13px;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .cert-check-icon {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .cert-stack-section {
+    padding: 40px 16px;
+  }
+  
+  .cert-stack-container h2 {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+  
+  .cert-stack-desc {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .cert-stack-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 32px;
+  }
+  
+  .cert-stack-icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 12px;
+  }
+  
+  .cert-stack-title {
+    font-size: 15px;
+  }
+  
+  .cert-stack-subtitle {
+    font-size: 13px;
+  }
+}
+
+/* ==========================================
+   CERTIFICATIONS PAGE - SMALL MOBILE (max-width: 480px)
+   ========================================== */
+@media (max-width: 480px) {
+  .cert-hero {
+    padding: 100px 12px 32px;
+  }
+  
+  .cert-hero h1 {
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+  }
+  
+  .cert-hero-desc {
+    font-size: 14px;
+  }
+  
+  .cert-grid-section {
+    padding: 32px 12px;
+  }
+  
+  .cert-grid {
+    gap: 12px;
+  }
+  
+  .cert-card {
+    padding: 16px;
+  }
+  
+  .cert-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .cert-card-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .cert-card h3 {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+  
+  .cert-card li {
+    font-size: 12px;
+    gap: 6px;
+  }
+  
+  .cert-check-icon {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .cert-stack-section {
+    padding: 32px 12px;
+  }
+  
+  .cert-stack-container h2 {
+    font-size: 22px;
+  }
+  
+  .cert-stack-desc {
+    font-size: 13px;
+  }
+  
+  .cert-stack-grid {
+    gap: 20px;
+    margin-top: 28px;
+  }
+  
+  .cert-stack-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .cert-stack-title {
+    font-size: 14px;
+  }
+  
+  .cert-stack-subtitle {
+    font-size: 12px;
+  }
+}
+
+/* ==========================================
+   CERTIFICATIONS PAGE - EXTRA SMALL (max-width: 360px)
+   ========================================== */
+@media (max-width: 360px) {
+  .cert-hero h1 {
+    font-size: 24px;
+  }
+  
+  .cert-hero-desc {
+    font-size: 13px;
+  }
+  
+  .cert-card {
+    padding: 14px;
+  }
+  
+  .cert-card h3 {
+    font-size: 15px;
+  }
+  
+  .cert-stack-container h2 {
+    font-size: 20px;
+  }
+}
+
+/* ==========================================
+   SERVICES/INDUSTRIES MOBILE
+   ========================================== */
+@media (max-width: 768px) {
+  .service-card,
+  .industry-card {
+    padding: 24px !important;
+  }
+  
+  .service-icon,
+  .industry-icon {
+    width: 48px !important;
+    height: 48px !important;
+  }
+}
+
+/* ==========================================
+   RESUME PAGE MOBILE
+   ========================================== */
+@media (max-width: 768px) {
+  .resume-page .container {
+    padding: 0 16px !important;
+  }
+  
+  .resume-page h1 {
+    font-size: 36px !important;
+  }
+  
+  .resume-page h2 {
+    font-size: 24px !important;
+  }
+  
+  .resume-page section {
+    padding: 40px 0 !important;
+  }
+  
+  /* Skills grid */
+  .resume-page [style*="gridTemplateColumns: repeat(3"],
+  .resume-page [style*="gridTemplateColumns: repeat(4"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-page [style*="gridTemplateColumns"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .resume-page h1 {
+    font-size: 28px !important;
+  }
+}
+
+
+
+/* ==========================================
+   FDE HERO MOBILE (Homepage WebGL)
+   ========================================== */
+@media (max-width: 768px) {
+  .port-showcase-slider-content {
+    max-width: 90% !important;
+    padding: 20px !important;
+  }
+  
+  .port-showcase-slider-title-sm span {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+  }
+  
+  .port-showcase-slider-desc {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+  
+  .port-showcase-slider-certs {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+  
+  .port-showcase-slider-cert {
+    font-size: 10px !important;
+    padding: 4px 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .port-showcase-slider-content {
+    bottom: 60px !important;
+    left: 16px !important;
+    right: 16px !important;
+    padding: 16px !important;
+  }
+  
+  .port-showcase-slider-title-sm span {
+    font-size: 20px !important;
+  }
+  
+  .port-showcase-slider-desc {
+    font-size: 13px !important;
+    -webkit-line-clamp: 3 !important;
+  }
+}
+
+/* ==========================================
+   GLOBAL INLINE STYLE OVERRIDES FOR MOBILE
+   Force responsive grids on all pages
+   ========================================== */
+@media (max-width: 768px) {
+  /* Any 3-column grid */
+  [style*="gridTemplateColumns: repeat(3"],
+  [style*="grid-template-columns: repeat(3"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Any 4-column grid */
+  [style*="gridTemplateColumns: repeat(4"],
+  [style*="grid-template-columns: repeat(4"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  /* Large font sizes */
+  [style*="fontSize: '64px'"],
+  [style*="font-size: 64px"] {
+    font-size: 40px !important;
+  }
+  
+  [style*="fontSize: '48px'"],
+  [style*="font-size: 48px"] {
+    font-size: 32px !important;
+  }
+  
+  [style*="fontSize: '36px'"],
+  [style*="font-size: 36px"] {
+    font-size: 28px !important;
+  }
+  
+  /* Padding adjustments */
+  [style*="padding: '80px"],
+  [style*="padding: 80px"] {
+    padding: 40px 16px !important;
+  }
+  
+  [style*="paddingTop: '140px"],
+  [style*="padding-top: 140px"] {
+    padding-top: 100px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Force single column on very small screens */
+  [style*="gridTemplateColumns: repeat(2"],
+  [style*="grid-template-columns: repeat(2"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  [style*="fontSize: '40px'"],
+  [style*="font-size: 40px"] {
+    font-size: 28px !important;
+  }
+  
+  [style*="fontSize: '32px'"],
+  [style*="font-size: 32px"] {
+    font-size: 24px !important;
+  }
+}
+
+/* ==========================================
+   ACCORDION FIX - HIDE CONTENT WHEN CLOSED
+   ========================================== */
+
+/* Base accordion content - MUST be hidden by default */
+.fde-accordion-content {
+  max-height: 0 !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: max-height 0.4s ease, padding 0.4s ease, opacity 0.3s ease !important;
+}
+
+/* Only show content when accordion is open */
+.fde-accordion-content.open {
+  max-height: 5000px !important;
+  padding: 32px 48px 48px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Mobile accordion fixes */
+@media (max-width: 768px) {
+  .fde-accordion-content.open {
+    padding: 20px !important;
+  }
+  
+  .fde-accordion-header {
+    padding: 16px 20px !important;
+  }
+  
+  .fde-accordion-title {
+    font-size: 20px !important;
+  }
+  
+  .fde-accordion-subtitle {
+    font-size: 12px !important;
+  }
+  
+  /* Two column layout stacks on mobile */
+  .fde-two-column {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  .fde-column-image,
+  .fde-column-image img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Charts scroll horizontally */
+  .fde-chart-container {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  
+  .fde-chart-container svg {
+    min-width: 500px !important;
+  }
+  
+  /* Inline metrics wrap */
+  .fde-inline-metrics {
+    flex-wrap: wrap !important;
+    gap: 16px !important;
+  }
+  
+  .fde-inline-metric {
+    min-width: 80px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .fde-accordion-content.open {
+    padding: 16px !important;
+  }
+  
+  .fde-accordion-header {
+    padding: 14px 16px !important;
+  }
+  
+  .fde-accordion-title {
+    font-size: 18px !important;
+  }
+  
+  .fde-column-text h3 {
+    font-size: 20px !important;
+  }
+  
+  .fde-column-text p {
+    font-size: 14px !important;
+  }
+}

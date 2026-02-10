@@ -1,0 +1,70 @@
+# Christopher Mangun - Healthcare AI Consultant
+
+> I am a healthcare AI consultant specializing in production-grade, compliant AI systems for hospitals, pharmaceutical companies, and regulated healthcare organizations. My work focuses on moving AI from pilot to reliable, auditable, and operational systems under HIPAA, FDA, and GxP constraints.
+
+## About
+
+Christopher Mangun is a Healthcare AI Consultant based in New York, NY with 15+ years experience embedded in healthcare and pharmaceutical environments. He bridges the gap between advanced AI technology and the rigorous compliance requirements of regulated industries, having delivered production AI systems for organizations including Pfizer, Abbott, Novartis, Sanofi, and Medtronic—achieving zero HIPAA violations across all engagements and FDA 510(k) clearance advisory for AI medical devices.
+
+## Healthcare AI Consulting Services
+
+- **RAG System Implementation**: Production-grade retrieval-augmented generation for clinical knowledge management, regulatory document retrieval, and compliant content generation
+- **Healthcare LLM Integration**: Enterprise large language model deployment with compliance guardrails, audit logging, PII protection, and clinical workflow integration
+- **MLOps for Regulated Industries**: CI/CD pipelines, model monitoring, drift detection, and automated retraining with full audit trails for HIPAA and FDA compliance
+- **Clinical Decision Support**: AI systems that augment clinical judgment while maintaining explainability and integrating with EHR workflows (Epic, Cerner)
+- **FDA AI Regulatory Advisory**: AI/ML medical device regulatory pathway guidance including 510(k) submissions
+
+## Regulatory Expertise
+
+- **HIPAA**: PHI handling, access controls, encryption, audit logging, BAA requirements
+- **FDA 21 CFR Part 11**: Electronic records, electronic signatures, validation protocols
+- **GxP Compliance**: Good Clinical Practice, Good Manufacturing Practice for pharma AI
+- **MLR Automation**: Medical-Legal-Regulatory review process optimization
+
+## Industries Served
+
+- **Hospitals & Health Systems**: Clinical decision support, ambient documentation, EHR integration, patient engagement AI
+- **Pharmaceutical Companies**: Pfizer, Novartis, Sanofi, Eli Lilly, Amgen - MLR automation, clinical trial optimization, regulatory submission support
+- **Medical Device Companies**: Abbott, Medtronic - FDA 510(k) pathway, AI/ML software validation, edge deployment
+- **Health Tech Startups**: HIPAA-first architecture, compliance roadmaps, technical due diligence
+
+## How I Work as a Healthcare AI Consultant
+
+- **Advisory & Strategy**: AI readiness assessments, architecture reviews, regulatory pathway planning
+- **Embedded Delivery**: Engaged as a consultant within your engineering team, shipping production code
+- **Fractional AI Architect**: Ongoing advisory and delivery for healthcare organizations scaling AI
+
+## Key Achievements
+
+- Reduced MLR review cycles by 35% via RAG system at Pfizer
+- Zero HIPAA violations across $51M portfolio at IPG Health
+- FDA 510(k) clearance advisory for GI Genius AI medical device
+- 99.99% reliability for patient-critical systems (Abbott Libre CGM)
+- Deployed ML pipelines across 27,000+ diagnostic devices
+- Reduced model deployment time from 6 months to 3 weeks at Abbott
+
+## Credentials
+
+- Google Cloud Professional Cloud Architect
+- Google Professional Machine Learning Engineer
+- Microsoft Azure AI Engineer Associate
+- AWS Machine Learning Specialty
+- IASSC Six Sigma Black Belt
+- Stanford AI/ML Healthcare Specialization
+
+## Contact
+
+- Email: cmangun@gmail.com
+- Phone: 917-717-1894
+- LinkedIn: https://linkedin.com/in/cmangun
+- GitHub: https://github.com/cmangun
+- Website: https://healthcare-ai-consultant.com
+
+## Healthcare AI Consulting Case Studies
+
+- [Healthcare AI Consulting Case Study: Production RAG System for Regulated Clinical Content](/fde-case-study-01): Pfizer CoCreate — 35% faster MLR cycles, 2.3× asset reuse, 500+ enterprise users
+- [Healthcare AI Consulting Case Study: AI-Powered Compliance Engine for Global Pharma](/fde-case-study-02): IPG Health — $51M portfolio, 13 brands, zero HIPAA violations
+- [Healthcare AI Consulting Case Study: HIPAA-Compliant ML Pipeline Migration](/fde-case-study-03): Abbott Labs — 27,000 devices, zero FDA audit findings, 6 months → 3 weeks deployment
+- [Healthcare AI Consulting Case Study: Real-World Evidence ML Platform](/fde-case-study-04): Sanofi — 15+ concurrent ML projects, automated feature stores, 99.9% uptime
+- [Healthcare AI Consulting Case Study: Patient-Critical Reliability Engineering](/fde-case-study-05): Abbott Libre CGM — 99.99% reliability for 4M+ patients
+- [Healthcare AI Consulting Case Study: FDA 510(k) AI Medical Device Advisory](/fde-case-study-06): Medtronic GI Genius — AI medical device regulatory clearance
