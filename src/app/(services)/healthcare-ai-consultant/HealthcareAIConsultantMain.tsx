@@ -381,7 +381,7 @@ const HealthcareAIConsultantMain = () => {
                     <div className="hac-authority-statement">
                         With 15+ years embedded in healthcare and pharmaceutical environments, I bridge the gap 
                         between advanced AI technology and the rigorous compliance requirements of regulated 
-                        industries. I have delivered production AI systems for organizations including Pfizer, 
+                        industries. I have led regulated healthcare programs for organizations including Pfizer, 
                         Abbott, Novartis, Sanofi, and Medtronic—achieving zero HIPAA violations across all 
                         engagements and FDA 510(k) clearance advisory for AI medical devices.
                     </div>
@@ -602,7 +602,7 @@ const HealthcareAIConsultantMain = () => {
                                 <p className="hac-engagement-desc">Engaged as a consultant within your engineering team, shipping production code</p>
                             </div>
                             <div className="hac-engagement-item">
-                                <h3 className="hac-engagement-title">Fractional AI Architect</h3>
+                                <h3 className="hac-engagement-title">Fractional Project Director</h3>
                                 <p className="hac-engagement-desc">Ongoing advisory and delivery for healthcare organizations scaling AI</p>
                             </div>
                         </div>
@@ -688,10 +688,10 @@ const HealthcareAIConsultantMain = () => {
                         <h2 className="hac-h2">For Recruiters and Hiring Managers</h2>
                         
                         <div className="hac-recruiter-block">
-                            <p className="hac-recruiter-title">Principal AI Architect – Healthcare & Life Sciences</p>
+                            <p className="hac-recruiter-title">Senior Project Director – Healthcare & Life Sciences</p>
                             
                             <p className="hac-text">
-                                I am a Principal AI Architect and Forward Deployed Engineer specializing in healthcare 
+                                I am a Senior Project Director and Senior Project Director specializing in healthcare 
                                 and life sciences. I work at the intersection of machine learning, cloud infrastructure, 
                                 and regulated systems, delivering production-grade AI platforms under HIPAA, FDA, and 
                                 GxP constraints.
@@ -713,13 +713,13 @@ const HealthcareAIConsultantMain = () => {
                         <h3 className="hac-h3">Role Alignment</h3>
                         <div className="hac-role-grid">
                             <div className="hac-role-item">
-                                <span className="hac-role-title">Principal AI Architect</span>
+                                <span className="hac-role-title">Senior Project Director</span>
                             </div>
                             <div className="hac-role-item">
                                 <span className="hac-role-title">Senior Machine Learning Engineer</span>
                             </div>
                             <div className="hac-role-item">
-                                <span className="hac-role-title">Forward Deployed Engineer</span>
+                                <span className="hac-role-title">Senior Project Director</span>
                             </div>
                             <div className="hac-role-item">
                                 <span className="hac-role-title">AI Platform Engineer</span>

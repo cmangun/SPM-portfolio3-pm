@@ -3,7 +3,7 @@ import BlogDeailsMain from "@/pages/blogs/blog-details/BlogDeailsMain";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Blog Details",
+    title: "Senior Project Director | Blog Details",
 };
 
 const page = () => {

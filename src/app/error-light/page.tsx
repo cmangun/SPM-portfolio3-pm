@@ -2,7 +2,7 @@ import ErrorMain from '@/pages/error/ErrorMain';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Not Found Page",
+    title: "Senior Project Director | Not Found Page",
 };
 
 const page = () => {

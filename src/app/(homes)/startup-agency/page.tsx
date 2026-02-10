@@ -2,7 +2,7 @@ import StartupagencyMain from '@/pages/homes/startup-agency/StartupagencyMain';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Startup agency Light",
+    title: "Senior Project Director | Startup agency Light",
 };
 
 

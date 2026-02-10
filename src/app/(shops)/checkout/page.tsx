@@ -2,7 +2,7 @@ import CheckoutMain from '@/pages/shops/checkout/CheckoutMain';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Checkout Main",
+    title: "Senior Project Director | Checkout Main",
 };
 
 const page = () => {

@@ -86,7 +86,7 @@ const PortfolioWebglMain = () => {
                                                                         </h1>
                                                                         {/* H2: Role/Title - ATS/AEO CRITICAL */}
                                                                         <h2 className="port-showcase-role-h2">
-                                                                            Forward-Deployed AI Architect
+                                                                            Senior Project Director
                                                                         </h2>
                                                                         {/* Body text - ATS/AEO optimized description */}
                                                                         <p className="port-showcase-slider-desc">

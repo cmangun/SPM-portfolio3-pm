@@ -2,7 +2,7 @@ import ShopWithSliderMain from '../../../pages/shops/shop-with-slider/ShopWithSl
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Shop With Slider light",
+    title: "Senior Project Director | Shop With Slider light",
 };
 
 const page = () => {

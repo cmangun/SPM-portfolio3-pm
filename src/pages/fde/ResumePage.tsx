@@ -38,7 +38,7 @@ const ResumePage = () => {
                           color: '#666',
                           marginBottom: '16px'
                         }}>
-                          Forward Deployed Engineer AI / ML
+                          Senior Project Director AI / ML
                         </p>
                         <h1 style={{ 
                           fontSize: '56px', 
@@ -54,7 +54,7 @@ const ResumePage = () => {
                           color: '#444',
                           maxWidth: '700px'
                         }}>
-                          Forward-Deployed AI Engineer with 15+ years leading technical transformation across regulated industries.
+                          Senior Project Director with 15+ years leading technical transformation across regulated industries.
                         </p>
                         <p style={{ 
                           fontSize: '16px', 
@@ -110,7 +110,7 @@ const ResumePage = () => {
                           <h3 style={{ fontSize: '20px', fontWeight: 700, margin: 0 }}>Self-Employed Contractor</h3>
                           <span style={{ fontSize: '14px', color: '#666' }}>NYC | July 2025 – Present</span>
                         </div>
-                        <p style={{ fontSize: '15px', color: '#666', marginBottom: '16px', fontStyle: 'italic' }}>Activation Architect / Forward-Deployed Engineer</p>
+                        <p style={{ fontSize: '15px', color: '#666', marginBottom: '16px', fontStyle: 'italic' }}>Activation Architect / Senior Project Director</p>
                         <ul style={{ paddingLeft: '20px', margin: 0 }}>
                           <li style={{ fontSize: '15px', lineHeight: 1.7, color: '#444', marginBottom: '8px' }}>Built Salesforce–Shopify integration pipelines and marketing automation infrastructure supporting Love Trust's growth platform.</li>
                           <li style={{ fontSize: '15px', lineHeight: 1.7, color: '#444', marginBottom: '8px' }}>Authored ID8TION and The Activation Architect (The 5%), advancing structured AI/ML implementation methodologies.</li>
@@ -124,7 +124,7 @@ const ResumePage = () => {
                           <h3 style={{ fontSize: '20px', fontWeight: 700, margin: 0 }}>Publicis Groupe / Pfizer Colab</h3>
                           <span style={{ fontSize: '14px', color: '#666' }}>New York, NY | Mar 2024 – July 2025</span>
                         </div>
-                        <p style={{ fontSize: '15px', color: '#666', marginBottom: '16px', fontStyle: 'italic' }}>Production Lead (Forward Deployed Engineering Role)</p>
+                        <p style={{ fontSize: '15px', color: '#666', marginBottom: '16px', fontStyle: 'italic' }}>Production Lead (Senior Project Directoring Role)</p>
                         <ul style={{ paddingLeft: '20px', margin: 0 }}>
                           <li style={{ fontSize: '15px', lineHeight: 1.7, color: '#444', marginBottom: '8px' }}>Embedded with Pfizer Global Production as part of CEO special projects strike-force pilots, focused on strategic operations.</li>
                           <li style={{ fontSize: '15px', lineHeight: 1.7, color: '#444', marginBottom: '8px' }}>Led design of an internal AI search assistant using OpenAI + SharePoint, accelerating air-gapped enterprise search via Glean-style semantic indexing.</li>
@@ -153,7 +153,7 @@ const ResumePage = () => {
                           <h3 style={{ fontSize: '20px', fontWeight: 700, margin: 0 }}>Abbott Labs – Advanced Analytics & Machine Learning</h3>
                           <span style={{ fontSize: '14px', color: '#666' }}>Chicago, IL | Dec 2018 – Mar 2020</span>
                         </div>
-                        <p style={{ fontSize: '15px', color: '#666', marginBottom: '16px', fontStyle: 'italic' }}>Forward-Deployed Engineering (Contract)</p>
+                        <p style={{ fontSize: '15px', color: '#666', marginBottom: '16px', fontStyle: 'italic' }}>Senior Project Directoring (Contract)</p>
                         <ul style={{ paddingLeft: '20px', margin: 0 }}>
                           <li style={{ fontSize: '15px', lineHeight: 1.7, color: '#444', marginBottom: '8px' }}>Deployed data ingestion and ML-readiness pipelines across 30K+ global diagnostics systems; enabled real-time insights for business leaders and downstream LLM-readiness and advanced analytics enablement.</li>
                           <li style={{ fontSize: '15px', lineHeight: 1.7, color: '#444', marginBottom: '8px' }}>Led agile transformation of global data ecosystem enabling BinaxNOW.</li>

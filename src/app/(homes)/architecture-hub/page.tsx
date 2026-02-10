@@ -2,7 +2,7 @@ import ArchitectureHubMain from '@/pages/homes/architecture-hub/ArchitectureHubM
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Architecture hub light",
+    title: "Senior Project Director | Architecture hub light",
 };
 
 const page = () => {

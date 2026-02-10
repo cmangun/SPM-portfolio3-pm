@@ -3,7 +3,7 @@ import PortfolioPinterestMain from '@/pages/portfolios/portfolio-pinterest/Portf
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Pinterest Light",
+    title: "Senior Project Director | Portfolio Pinterest Light",
 };
 
 const page = () => {

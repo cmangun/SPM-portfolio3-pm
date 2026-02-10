@@ -3,7 +3,7 @@ import PortfolioHorizontalShowcase from '@/pages/portfolios/portfolio-horizontal
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Horizontal Showcase Light",
+    title: "Senior Project Director | Portfolio Horizontal Showcase Light",
 };
 
 const page = () => {

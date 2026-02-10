@@ -2,7 +2,7 @@ import ShopModernMain from '@/pages/homes/shop-modern/ShopModernMain';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Shop Modern Light",
+    title: "Senior Project Director | Shop Modern Light",
 };
 
 const page = () => {

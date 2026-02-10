@@ -2,7 +2,7 @@ import LoginMain from '@/pages/login/LoginMain';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Login Main",
+    title: "Senior Project Director | Login Main",
 };
 
 const page = () => {

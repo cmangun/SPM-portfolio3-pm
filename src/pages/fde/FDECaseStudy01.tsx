@@ -946,7 +946,7 @@ const FDECaseStudy01 = () => {
                     <div className="fde-hero-container">
                       <div className="fde-hero-left">
                         <h1 className="fde-hero-title">CoCo</h1>
-                        <p className="fde-hero-subtitle" >AI-Enhanced Intranet for Enterprise Knowledge & Onboarding</p>
+                        <p className="fde-hero-subtitle" >Enterprise Content Platform Delivery — Pfizer Global Brands</p>
                         
                         <div className="fde-hero-meta" style={{ marginTop: '32px' }}>
                           <div style={{ padding: '20px 0', borderBottom: '1px solid #e5e5e5' }}>
@@ -955,7 +955,7 @@ const FDECaseStudy01 = () => {
                           </div>
                           <div style={{ padding: '20px 0' }}>
                             <div style={{ fontSize: '12px', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px', color: '#999', marginBottom: '12px' }}>Solution</div>
-                            <div style={{ fontSize: '15px', color: '#1a1a1a', lineHeight: '1.5' }}>Governed RAG platform reducing cycles by 65%, tripling throughput, saving $2.08M annually</div>
+                            <div style={{ fontSize: '15px', color: '#1a1a1a', lineHeight: '1.5' }}>Governed enterprise content platform reducing MLR review cycles by 65%, tripling team throughput, and delivering $2.08M in annual savings</div>
                           </div>
                         </div>
                       </div>
@@ -997,7 +997,7 @@ const FDECaseStudy01 = () => {
                     
                     {/* DIAGNOSE */}
                     <AccordionSection
-                      title="Diagnose"
+                      title="Discovery & Assessment"
                       subtitle="Review cycle time, revision rate, search time"
                       isOpen={openSections.diagnose}
                       onToggle={() => toggleSection('diagnose')}
@@ -1055,15 +1055,15 @@ const FDECaseStudy01 = () => {
 
                     {/* ARCHITECT */}
                     <AccordionSection
-                      title="Architect"
-                      subtitle="Architecture sign-off, SLO definitions"
+                      title="Planning & Alignment"
+                      subtitle="Platform design, stakeholder alignment, compliance architecture"
                       isOpen={openSections.architect}
                       onToggle={() => toggleSection('architect')}
                     >
                       <div className="fde-section-content">
                         <div className="fde-two-column">
                           <div className="fde-column-text">
-                            <h3>CoCo: an AI-enhanced intranet that answers questions and finds content.</h3>
+                            <h3>CoCo: an enterprise content platform that centralizes knowledge and accelerates compliance.</h3>
                             <p>
                               CoCo—&quot;Company Companion&quot;—is embedded in Microsoft Teams. Instead of 
                               searching 20 systems, employees ask CoCo. It retrieves approved content, answers 
@@ -1120,7 +1120,7 @@ const FDECaseStudy01 = () => {
                         <div className="fde-chart-section" style={{ marginTop: '40px' }}>
                           <div className="fde-chart-header">
                             <h4>Disaster Recovery & Business Continuity</h4>
-                            <p>Multi-region architecture with automated failover and tested recovery procedures.</p>
+                            <p>Multi-region architecture with automated redundancy and tested recovery procedures.</p>
                           </div>
                           <div style={{ backgroundColor: '#fff', padding: '24px', borderRadius: '8px', border: '1px solid #e5e5e5' }}>
                             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', marginBottom: '24px' }}>
@@ -1193,15 +1193,15 @@ const FDECaseStudy01 = () => {
 
                     {/* ENGINEER */}
                     <AccordionSection
-                      title="Engineer"
-                      subtitle="p95 latency, uptime, error rate"
+                      title="Execution & Delivery"
+                      subtitle="Platform performance, reliability metrics, delivery governance"
                       isOpen={openSections.engineer}
                       onToggle={() => toggleSection('engineer')}
                     >
                       <div className="fde-section-content">
                         <div className="fde-two-column">
                           <div className="fde-column-text">
-                            <h3>Production RAG with governed retrieval and compliance gates.</h3>
+                            <h3>Enterprise platform with governed content delivery and compliance gates.</h3>
                             <p>
                               CoCo doesn&apos;t replace Veeva, SharePoint, or Workfront. It sits on top. 
                               The systems of record remain authoritative. CoCo indexes their content, 
@@ -1209,7 +1209,7 @@ const FDECaseStudy01 = () => {
                               answer traceable back to its source.
                             </p>
                             <p>
-                              Built with clear SLOs: sub-second retrieval, 99.9% uptime, full audit trail. 
+                              Built with clear performance standards: sub-second retrieval, 99.9% uptime, full audit trail. 
                               Every response includes citations. Every query is logged. MLR gateway validates 
                               compliance before content surfaces to users.
                             </p>
@@ -1228,7 +1228,7 @@ const FDECaseStudy01 = () => {
                         <div className="fde-chart-section">
                           <div className="fde-chart-header">
                             <h4>CoCo Service Health Dashboard</h4>
-                            <p>Real-time monitoring across all platform services. Target SLOs: p95 &lt;300ms, 99.7% uptime, &lt;0.1% error rate.</p>
+                            <p>Real-time monitoring across all platform services. Performance targets: response time &lt;300ms, 99.7% uptime, &lt;0.1% error rate.</p>
                           </div>
                           <div className="fde-chart-container">
                             <ServiceHealthDashboard data={engineerServiceData} title="Platform Service Health" width={700} height={520} />
@@ -1239,7 +1239,7 @@ const FDECaseStudy01 = () => {
 
                     {/* ENABLE */}
                     <AccordionSection
-                      title="Enable"
+                      title="Launch & Adoption"
                       subtitle="User activation, satisfaction, training completion"
                       isOpen={openSections.enable}
                       onToggle={() => toggleSection('enable')}

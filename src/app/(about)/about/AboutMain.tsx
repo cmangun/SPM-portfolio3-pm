@@ -5,30 +5,30 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const credentials = [
-    { name: 'Google Cloud Professional Cloud Architect', issuer: 'Google Cloud', icon: '/assets/img/svg-icons/Cloud.svg' },
-    { name: 'Google Professional Machine Learning Engineer', issuer: 'Google Cloud', icon: '/assets/img/svg-icons/Settings 1.svg' },
-    { name: 'Microsoft Azure AI Engineer Associate', issuer: 'Microsoft', icon: '/assets/img/svg-icons/Desktop Monitor.svg' },
-    { name: 'AWS Machine Learning Specialty', issuer: 'Amazon Web Services', icon: '/assets/img/svg-icons/Chart Statistics 1.svg' },
     { name: 'Lean Six Sigma Black Belt', issuer: 'IASSC', icon: '/assets/img/svg-icons/Trend Up 1.svg' },
+    { name: 'Certified Scrum Master (CSM)', issuer: 'Scrum Alliance', icon: '/assets/img/svg-icons/Settings 1.svg' },
     { name: 'Stanford AI/ML Healthcare Specialization', issuer: 'Stanford University', icon: '/assets/img/svg-icons/Graduation Hat.svg' },
+    { name: 'AWS Certified Solutions Architect', issuer: 'Amazon Web Services', icon: '/assets/img/svg-icons/Cloud.svg' },
+    { name: 'Google Cloud Professional Architect', issuer: 'Google Cloud', icon: '/assets/img/svg-icons/Desktop Monitor.svg' },
+    { name: 'Google Professional Machine Learning Engineer', issuer: 'Google Cloud', icon: '/assets/img/svg-icons/Chart Statistics 1.svg' },
 ];
 
 const clients = [
     { name: 'Pfizer', years: '2024-2025' },
-    { name: 'Abbott', years: '2018-2020' },
     { name: 'IPG Health', years: '2020-2024' },
     { name: 'Novartis', years: '2020-2024' },
     { name: 'Sanofi', years: '2020-2024' },
+    { name: 'Abbott', years: '2018-2020' },
     { name: 'Medtronic', years: '2017-2018' },
     { name: 'Eli Lilly', years: '2014-2016' },
     { name: 'Amgen', years: '2015-2017' },
 ];
 
 const expertise = [
-    { category: 'AI/ML Systems', icon: '/assets/img/svg-icons/Light Bulb.svg', items: ['RAG Systems', 'Graph-RAG', 'LLM Integration', 'NLP', 'Fine-tuning', 'Prompt Engineering'] },
-    { category: 'Platforms', icon: '/assets/img/svg-icons/Cloud.svg', items: ['Azure ML', 'AWS SageMaker', 'AKS', 'MLflow', 'Kubeflow', 'Vertex AI'] },
-    { category: 'Data', icon: '/assets/img/svg-icons/Chart Statistics 2.svg', items: ['PostgreSQL', 'Neo4j', 'Pinecone', 'Qdrant', 'Delta Lake', 'Snowflake'] },
-    { category: 'Compliance', icon: '/assets/img/svg-icons/Shield Checkmark.svg', items: ['HIPAA', 'FDA 21 CFR Part 11', 'MLR Compliance', 'SOC 2', 'Model Explainability'] },
+    { category: 'Program & Project Leadership', icon: '/assets/img/svg-icons/Light Bulb.svg', items: ['PMO governance & delivery execution', 'Timeline ownership & dependency management', 'Cross-functional team leadership', 'Risk identification & mitigation', 'Executive & client communication'] },
+    { category: 'Regulated Healthcare Delivery', icon: '/assets/img/svg-icons/Shield Checkmark.svg', items: ['MLR workflows & compliance', 'Audit-ready documentation', 'Pharma, diagnostics & medical device', 'HCP/Patient launch programs', 'Portfolio & budget oversight', 'Scope control & change management'] },
+    { category: 'Process & Operations', icon: '/assets/img/svg-icons/Chart Statistics 2.svg', items: ['Process standardization', 'Workflow optimization', 'Agile methodologies', 'Status & governance cadences', 'Deliverable quality assurance'] },
+    { category: 'Technical & Digital Fluency', icon: '/assets/img/svg-icons/Cloud.svg', items: ['AI-enabled platforms', 'Enterprise data systems', 'Digital marketing platforms', 'Healthcare systems & interoperability'] },
 ];
 
 const AboutMain = () => {
@@ -203,11 +203,6 @@ const AboutMain = () => {
                     margin-bottom: 24px;
                     color: rgba(255,255,255,0.9);
                 }
-                .cta-buttons {
-                    display: flex;
-                    gap: 16px;
-                    justify-content: center;
-                }
                 .cta-button {
                     display: inline-block;
                     padding: 16px 40px;
@@ -223,53 +218,34 @@ const AboutMain = () => {
                     background: rgba(255,255,255,0.9);
                     transform: translateY(-2px);
                 }
-                .cta-button-outline {
-                    background: transparent;
-                    color: #ffffff;
-                    border: 1px solid rgba(255,255,255,0.3);
-                }
-                .cta-button-outline:hover {
-                    background: rgba(255,255,255,0.1);
-                    border-color: rgba(255,255,255,0.5);
-                }
-                .toolchain-section {
-                    background: rgba(255,255,255,0.02);
-                    border: 1px solid rgba(255,255,255,0.08);
-                    border-radius: 8px;
-                    padding: 32px;
-                    margin-top: 40px;
-                }
-                .toolchain-grid {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 16px 40px;
-                }
-                .toolchain-row {
-                    display: flex;
-                    gap: 16px;
-                }
-                .toolchain-label {
-                    font-size: 13px;
-                    font-weight: 600;
-                    color: rgba(255,255,255,0.5);
-                    min-width: 100px;
-                }
-                .toolchain-value {
-                    font-size: 13px;
-                    color: rgba(255,255,255,0.8);
-                    line-height: 1.5;
-                }
                 .how-i-work-content {
                     font-size: 17px;
                     line-height: 1.8;
                     color: rgba(255,255,255,0.8);
                     max-width: 700px;
                 }
-                .failure-mode-callout {
-                    margin-top: 32px;
-                    padding: 24px;
-                    background: rgba(255,255,255,0.02);
-                    border-left: 3px solid rgba(255,255,255,0.2);
+                .delivery-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 24px 0 0 0;
+                    max-width: 700px;
+                }
+                .delivery-list li {
+                    font-size: 15px;
+                    color: rgba(255,255,255,0.7);
+                    margin-bottom: 12px;
+                    padding-left: 20px;
+                    position: relative;
+                    line-height: 1.6;
+                }
+                .delivery-list li::before {
+                    content: '—';
+                    position: absolute;
+                    left: 0;
+                    color: rgba(255,255,255,0.3);
+                }
+                .differentiator {
+                    margin-top: 24px;
                     font-size: 15px;
                     color: rgba(255,255,255,0.7);
                     line-height: 1.7;
@@ -284,12 +260,6 @@ const AboutMain = () => {
                     color: rgba(255,255,255,0.6);
                     line-height: 1.7;
                     font-style: italic;
-                }
-                .differentiator {
-                    margin-top: 24px;
-                    font-size: 15px;
-                    color: rgba(255,255,255,0.7);
-                    line-height: 1.7;
                 }
                 .keywords-section {
                     margin-top: 40px;
@@ -333,12 +303,6 @@ const AboutMain = () => {
                         grid-template-columns: repeat(2, 1fr);
                         gap: 24px;
                     }
-                    .toolchain-grid {
-                        grid-template-columns: 1fr;
-                    }
-                    .cta-buttons {
-                        flex-direction: column;
-                    }
                 }
             `}</style>
             
@@ -346,49 +310,47 @@ const AboutMain = () => {
             <BackToTop />
             
             <main>
-                {/* Hero Section - AEO OPTIMIZED */}
+                {/* Hero Section */}
                 <section className="about-hero">
-                    <p className="about-hero-eyebrow">Forward-Deployed AI Architect</p>
+                    <p className="about-hero-eyebrow">Senior Project Director</p>
                     <h1 className="about-hero-title">Christopher Mangun</h1>
-                    {/* H2 with role language for search intent */}
-                    <h2 className="about-hero-subtitle">Principal AI Platform Engineer — Enterprise AI Systems for Regulated Environments</h2>
-                    {/* AEO-OPTIMIZED INTRO - Exact phrases for AI summarizers */}
+                    <h2 className="about-hero-subtitle">Healthcare, Regulated Marketing &amp; AI-Enabled Platforms</h2>
                     <p className="about-hero-intro">
-                        I am a Forward-Deployed AI Architect and Principal AI Platform Engineer specializing 
-                        in the design and deployment of production-grade AI systems for regulated enterprises. 
-                        My work spans Retrieval-Augmented Generation (RAG), enterprise search, AI governance, 
-                        MLOps, and human-in-the-loop systems, with deep experience in healthcare, life sciences, 
-                        and compliance-driven environments.
+                        Senior Project Director and Launch Lead with 15+ years of experience delivering 
+                        complex, regulated healthcare programs across pharma, diagnostics, medical devices, 
+                        and enterprise marketing environments. Proven track record leading multi-brand portfolios, 
+                        owning timelines and budgets, coordinating cross-functional teams, and ensuring compliance 
+                        across medical, legal, and regulatory (MLR) workflows.
                     </p>
                     <p className="about-hero-intro" style={{ marginTop: '16px' }}>
-                        I have led AI initiatives from ambiguous discovery through production delivery, 
-                        audit readiness, and organizational adoption—ensuring systems are reliable, 
-                        explainable, secure, and compliant.
+                        Known for translating strategy into executable delivery plans, de-risking large programs, 
+                        and driving operational excellence across high-stakes, high-visibility engagements.
                     </p>
                 </section>
 
-                {/* How I Work Section - NEW */}
+                {/* How I Work Section */}
                 <section className="about-section">
                     <h2 className="section-title">How I Work</h2>
                     <p className="how-i-work-content">
-                        I operate as a Forward-Deployed Engineer embedded with stakeholders, owning the full 
-                        lifecycle from discovery and system design through production deployment, audit readiness, 
-                        and organizational adoption. My focus is on systems that are reliable, explainable, and 
-                        safe to operate in regulated environments.
+                        I operate as an embedded project leader — owning delivery from kickoff through launch, 
+                        managing dependencies, running status cadences, and ensuring every deliverable is 
+                        compliant, on-time, and on-brand. My approach bridges clinical, regulatory, commercial, 
+                        and creative teams — translating strategic objectives into executable plans and structured 
+                        governance so programs move forward predictably.
                     </p>
-                    
-                    {/* Differentiator */}
+                    <ul className="delivery-list">
+                        <li>Facilitate structured kickoff and stakeholder alignment sessions</li>
+                        <li>Define project timelines, milestones, and approval checkpoints</li>
+                        <li>Run weekly status meetings and capture decision/action logs</li>
+                        <li>Track regulated content through MLR review cycles</li>
+                        <li>Coordinate dependencies across creative, strategy, digital, and compliance</li>
+                        <li>Manage budgets, scope, and resource allocation</li>
+                        <li>Drive delivery to schedule, on brand, and within scope</li>
+                    </ul>
                     <p className="differentiator">
-                        My work focuses on building AI systems that organizations can safely rely on—not 
-                        prototypes, demos, or prompt wrappers.
+                        I keep teams aligned and projects moving forward. I anticipate blockers before they 
+                        escalate and bring structure without slowing velocity.
                     </p>
-                    
-                    {/* Failure Mode Callout */}
-                    <div className="failure-mode-callout">
-                        A core design principle across my work is anticipating failure modes—model drift, 
-                        retrieval degradation, governance gaps, and operational misuse—and designing systems 
-                        that surface issues early rather than hide them.
-                    </div>
                 </section>
 
                 {/* Background Section */}
@@ -396,54 +358,20 @@ const AboutMain = () => {
                     <h2 className="section-title">Background</h2>
                     <div className="story-content">
                         <p>
-                            I've spent my career at the intersection of enterprise technology and 
-                            healthcare compliance. From migrating ML pipelines through FDA audits at 
-                            Abbott, to building the first MCP-RAG knowledge platform for pharmaceutical 
-                            content at Pfizer, I've learned that the hardest part of AI isn't the 
-                            algorithms—it's shipping systems that work in production under real constraints.
+                            From managing a $51M healthcare portfolio across 13 pharma brands at IPG Health, 
+                            to leading enterprise platform delivery at Pfizer, to orchestrating a 27,000-device 
+                            migration at Abbott with zero FDA audit findings — my career has been defined by 
+                            delivering complex programs under real regulatory constraints.
                         </p>
                         <p className="story-highlight">
-                            Zero HIPAA violations across $51M+ in regulated AI portfolios. 
-                            Zero FDA audit findings on ML system migrations.
+                            Zero HIPAA violations across $51M+ in regulated portfolios. 
+                            Zero FDA audit findings on system migrations.
                         </p>
                         <p>
-                            Based in New York, I work with healthcare organizations that need someone 
-                            who understands both the technical depth of modern AI systems and the 
-                            regulatory reality of deploying them in clinical and commercial environments.
+                            Based in New York, I partner with healthcare organizations and agencies that need 
+                            someone who understands both the operational rigor of regulated delivery and the 
+                            strategic depth of modern healthcare marketing and AI-enabled platforms.
                         </p>
-                    </div>
-                </section>
-
-                {/* Representative Toolchain - NEW */}
-                <section className="about-section">
-                    <h2 className="section-title">Representative Toolchain</h2>
-                    <div className="toolchain-section">
-                        <div className="toolchain-grid">
-                            <div className="toolchain-row">
-                                <span className="toolchain-label">Architecture</span>
-                                <span className="toolchain-value">Cloud-native, service-oriented AI platforms</span>
-                            </div>
-                            <div className="toolchain-row">
-                                <span className="toolchain-label">AI Systems</span>
-                                <span className="toolchain-value">Retrieval-Augmented Generation (RAG), enterprise search</span>
-                            </div>
-                            <div className="toolchain-row">
-                                <span className="toolchain-label">Governance</span>
-                                <span className="toolchain-value">Audit logging, policy enforcement, HITL workflows</span>
-                            </div>
-                            <div className="toolchain-row">
-                                <span className="toolchain-label">MLOps</span>
-                                <span className="toolchain-value">CI/CD, evaluation pipelines, monitoring and alerting</span>
-                            </div>
-                            <div className="toolchain-row">
-                                <span className="toolchain-label">Data</span>
-                                <span className="toolchain-value">Vector databases, structured metadata stores</span>
-                            </div>
-                            <div className="toolchain-row">
-                                <span className="toolchain-label">Languages</span>
-                                <span className="toolchain-value">Python, TypeScript</span>
-                            </div>
-                        </div>
                     </div>
                 </section>
 
@@ -482,9 +410,9 @@ const AboutMain = () => {
                     </div>
                 </section>
 
-                {/* Expertise Section */}
+                {/* Core Competencies Section */}
                 <section className="about-section">
-                    <h2 className="section-title">Technical Expertise</h2>
+                    <h2 className="section-title">Core Competencies</h2>
                     <div className="expertise-grid">
                         {expertise.map((exp, i) => (
                             <div key={i}>
@@ -507,27 +435,26 @@ const AboutMain = () => {
                         ))}
                     </div>
                     
-                    {/* Leveling Statement - NEW */}
                     <div className="leveling-statement">
-                        This portfolio reflects Principal-level ownership across problem definition, system 
-                        architecture, production delivery, regulatory alignment, and long-term operational stewardship.
+                        15+ years leading regulated healthcare programs across pharma, diagnostics, 
+                        medical devices, and enterprise marketing environments. Deep expertise in 
+                        cross-functional coordination, MLR compliance, and AI-enabled platform delivery.
                     </div>
                     
-                    {/* Search Keywords Section - SEO/AEO */}
                     <div className="keywords-section">
-                        <p className="keywords-title">Search Keywords & Expertise</p>
+                        <p className="keywords-title">Search Keywords &amp; Expertise</p>
                         <p className="keywords-list">
-                            Forward Deployed Engineer portfolio • Principal AI Architect healthcare • 
-                            Enterprise RAG architecture • AI governance platform • Regulated AI systems • 
-                            Healthcare AI compliance • MLOps for regulated environments • 
-                            AI auditability and traceability • Enterprise knowledge systems
+                            Senior Project Director healthcare • Healthcare project management • 
+                            Regulated marketing delivery • MLR compliance • Pharma portfolio management • 
+                            Cross-functional healthcare teams • Healthcare agency project director • 
+                            Medical device launch management • Digital healthcare marketing
                         </p>
                     </div>
                 </section>
 
                 {/* CTA Section */}
                 <section className="about-cta">
-                    <p className="cta-text">Let's discuss your AI initiative</p>
+                    <p className="cta-text">Let&apos;s discuss your next healthcare program</p>
                     <Link href="/contact" className="cta-button">
                         Get in Touch
                     </Link>

@@ -2,7 +2,7 @@ import BlogGridWithSidebar from '@/pages/blogs/blog-grid-with-sidebar/BlogGridWi
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Blog Grid With Sidebar Light",
+    title: "Senior Project Director | Blog Grid With Sidebar Light",
 };
 
 const page = () => {

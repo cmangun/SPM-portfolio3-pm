@@ -14,10 +14,10 @@ interface ATSCaseStudyHeaderProps {
 }
 
 const ATSCaseStudyHeader = ({
-    role = "Forward-Deployed AI Architect / Principal AI Platform Engineer",
+    role = "Senior Project Director / Senior Project Director",
     domain = "Regulated Healthcare / Life Sciences",
     systemType = "Enterprise AI Platform, RAG, Knowledge Systems",
-    coreSkills = ["AI Architecture", "MLOps", "AI Governance", "Vector Search", "Compliance"],
+    coreSkills = ["Project Leadership", "Regulated Delivery", "MLR Compliance", "Cross-Functional Coordination", "Healthcare Programs"],
     outcome = "Production AI system deployed with zero compliance violations and measurable operational impact",
     client,
 }: ATSCaseStudyHeaderProps) => {

@@ -2,7 +2,7 @@ import PortfolioMasonryMain from '@/pages/portfolios/portfolio-masonry/Portfolio
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Masonry Light",
+    title: "Senior Project Director | Portfolio Masonry Light",
 };
 
 const page = () => {

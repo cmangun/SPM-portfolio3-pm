@@ -2,7 +2,7 @@ import PortfolioWrapperSlider from '@/pages/portfolios/portfolio-wrapper-slider/
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Wrapper Slider",
+    title: "Senior Project Director | Portfolio Wrapper Slider",
 };
 
 const page = () => {

@@ -132,10 +132,10 @@ export const portfolioWebglSlides = [
         active: true, 
         brand: "", 
         logo: "", 
-        title: "Forward-Deployed AI Architect", 
-        subtitle: "I help healthcare companies design, deploy, and operate production AI systems in regulated environments.",
-        specialization: "Principal-level ownership across system architecture, production delivery, regulatory alignment, and long-term operational stewardship.",
-        certs: ["GCP Cloud Architect", "Google Professional ML Engineer", "Azure AI Engineer Associate", "AWS ML Specialty"],
+        title: "Senior Project Director", 
+        subtitle: "I lead regulated healthcare programs — coordinating strategy, compliance, and cross-functional delivery to produce measurable results on time and on brand.",
+        specialization: "15+ years leading regulated healthcare programs across pharma, diagnostics, medical devices, and enterprise marketing environments.",
+        certs: ["Six Sigma Black Belt", "Scrum Master CSM", "Stanford AI/ML Healthcare", "AWS Solutions Architect"],
         link: "/resume",
         slug: "intro",
         isIntro: true
@@ -146,7 +146,7 @@ export const portfolioWebglSlides = [
         brand: "Pfizer", 
         logo: "/assets/img/logo/pfizer-logo.png", 
         title: "CoCo AI", 
-        subtitle: "Enterprise needed a unified knowledge platform. Delivered agentic RAG system reducing MLR cycles by 35%.",
+        subtitle: "Led enterprise content platform delivery for Pfizer's largest global brands. Reduced MLR review cycles by 35% through structured governance and cross-functional coordination.",
         link: "/fde-case-study-01",
         slug: "coco-ai"
     },
@@ -156,7 +156,7 @@ export const portfolioWebglSlides = [
         brand: "IPG Health", 
         logo: "/assets/img/logo/ipg-logo.png", 
         title: "AI Playbooks", 
-        subtitle: "13 pharma brands needed compliant content velocity. Delivered ML platform scaling from 5 to 60+ engineers.",
+        subtitle: "Directed $51M healthcare portfolio across 13 pharma brands. Scaled delivery team from 5 to 60+ while maintaining timeline and regulatory compliance.",
         link: "/fde-case-study-02",
         slug: "ai-playbooks"
     },
@@ -166,7 +166,7 @@ export const portfolioWebglSlides = [
         brand: "Abbott", 
         logo: "/assets/img/logo/abbott-logo.png", 
         title: "Alinity Analytics", 
-        subtitle: "27K devices needed cloud migration without FDA risk. Delivered zero audit findings, 3-week deploys.",
+        subtitle: "Managed global data migration for 27,000 diagnostic devices. Zero FDA audit findings through disciplined delivery planning and stakeholder alignment.",
         link: "/fde-case-study-03",
         slug: "alinity-analytics"
     },
@@ -176,7 +176,7 @@ export const portfolioWebglSlides = [
         brand: "Pfizer", 
         logo: "/assets/img/logo/pfizer-logo.png", 
         title: "Content Automation", 
-        subtitle: "MLR bottleneck blocking content velocity. Delivered human-in-the-loop AI cutting review time 71%.",
+        subtitle: "Owned MLR workflow optimization initiative. Reduced content review turnaround by 71% through process redesign and cross-team coordination.",
         link: "/fde-case-study-04",
         slug: "content-automation"
     },
@@ -186,7 +186,7 @@ export const portfolioWebglSlides = [
         brand: "Abbott", 
         logo: "/assets/img/logo/abbott-logo.png", 
         title: "Libre CGM", 
-        subtitle: "4M+ patients depend on real-time alerts. Delivered 99.99% reliability for patient-critical systems.",
+        subtitle: "Led delivery of patient-critical monitoring platform serving 4M+ patients. Achieved 99.99% system reliability through rigorous project governance.",
         link: "/fde-case-study-05",
         slug: "libre-cgm"
     },
@@ -196,7 +196,7 @@ export const portfolioWebglSlides = [
         brand: "Medtronic", 
         logo: "/assets/img/logo/medtronic-logo.png", 
         title: "GI Genius", 
-        subtitle: "AI medical device needed FDA clearance. Delivered 510(k) pathway with 99.7% sensitivity validation.",
+        subtitle: "Directed FDA 510(k) clearance program for AI medical device. Coordinated clinical, regulatory, and engineering teams through successful validation.",
         link: "/fde-case-study-06",
         slug: "gi-genius"
     }

@@ -2,7 +2,7 @@ import CareerMain from '@/pages/about/career/CareerMain';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Career light",
+    title: "Senior Project Director | Career light",
 };
 
 const page = () => {

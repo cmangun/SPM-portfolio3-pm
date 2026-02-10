@@ -203,7 +203,7 @@ const FDECaseStudy04 = () => {
                     <div className="fde-hero-container">
                       <div className="fde-hero-left">
                         <h1 className="fde-hero-title" >Content Automation</h1>
-                        <p className="fde-hero-subtitle" >Human-in-the-Loop MLR Governance at Global Scale</p>
+                        <p className="fde-hero-subtitle" >MLR Workflow Optimization & Content Review Process Redesign</p>
                         
                         <div className="fde-hero-meta" style={{ marginTop: '32px' }}>
                           <div style={{ padding: '20px 0', borderBottom: '1px solid #e5e5e5' }}>
@@ -212,7 +212,7 @@ const FDECaseStudy04 = () => {
                           </div>
                           <div style={{ padding: '20px 0' }}>
                             <div style={{ fontSize: '12px', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px', color: '#999', marginBottom: '12px' }}>Solution</div>
-                            <div style={{ fontSize: '15px', color: '#1a1a1a', lineHeight: '1.5' }}>RAG-powered content automation with human-in-the-loop governance, reducing review time by 71%</div>
+                            <div style={{ fontSize: '15px', color: '#1a1a1a', lineHeight: '1.5' }}>MLR workflow optimization with structured governance and cross-team coordination, reducing review turnaround by 71%</div>
                           </div>
                         </div>
                       </div>
@@ -253,7 +253,7 @@ const FDECaseStudy04 = () => {
                     
                     {/* DIAGNOSE */}
                     <AccordionSection
-                      title="Diagnose"
+                      title="Discovery & Assessment"
                       subtitle="Workflow complexity, approval bottlenecks, compliance gaps"
                       isOpen={openSections.diagnose}
                       onToggle={() => toggleSection('diagnose')}
@@ -315,7 +315,7 @@ const FDECaseStudy04 = () => {
 
                     {/* ARCHITECT */}
                     <AccordionSection
-                      title="Architect"
+                      title="Planning & Alignment"
                       subtitle="RAG pipeline, claims validation, human-in-the-loop governance"
                       isOpen={openSections.architect}
                       onToggle={() => toggleSection('architect')}
@@ -382,7 +382,7 @@ const FDECaseStudy04 = () => {
 
                     {/* ENGINEER */}
                     <AccordionSection
-                      title="Engineer"
+                      title="Execution & Delivery"
                       subtitle="Latency optimization, throughput scaling, reliability"
                       isOpen={openSections.engineer}
                       onToggle={() => toggleSection('engineer')}
@@ -397,7 +397,7 @@ const FDECaseStudy04 = () => {
                               pre-validated content with confidence scores and source citations.
                             </p>
                             <p>
-                              SLOs: p95 validation latency under 2 seconds, 99.5% uptime, complete 
+                              Performance targets: validation response under 2 seconds, 99.5% uptime, complete 
                               audit trail for every decision. The system handles 300+ assets per month 
                               with capacity to scale 10x without architecture changes.
                             </p>
@@ -506,7 +506,7 @@ const FDECaseStudy04 = () => {
 
                     {/* ENABLE */}
                     <AccordionSection
-                      title="Enable"
+                      title="Launch & Adoption"
                       subtitle="Workflow adoption, training, operational metrics"
                       isOpen={openSections.enable}
                       onToggle={() => toggleSection('enable')}

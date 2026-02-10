@@ -3,11 +3,11 @@ import { siteConfig } from '@/lib/seo-config';
 import CaseStudiesMain from './CaseStudiesMain';
 
 export const metadata: Metadata = {
-    title: 'Case Studies | Forward-Deployed AI Architect Portfolio',
-    description: 'Forward-Deployed AI Architect case studies from Pfizer, Abbott, Medtronic, and IPG Health. Production AI systems with real results: 65% MLR cycle reduction, FDA 510(k) clearance, 99.99% reliability, zero compliance violations.',
+    title: 'Case Studies | Senior Project Director Portfolio',
+    description: 'Senior Project Director case studies from Pfizer, Abbott, Medtronic, and IPG Health. Production AI systems with real results: 65% MLR cycle reduction, FDA 510(k) clearance, 99.99% reliability, zero compliance violations.',
     keywords: [
-        'Forward Deployed Engineer portfolio',
-        'Principal AI Architect healthcare',
+        'Senior Project Director portfolio',
+        'Senior Project Director healthcare',
         'Enterprise RAG architecture',
         'AI governance platform',
         'Regulated AI systems',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
         'medical device AI',
     ],
     openGraph: {
-        title: 'Case Studies | Forward-Deployed AI Architect',
-        description: 'Forward-Deployed AI Architect case studies with production results from Pfizer, Abbott, Medtronic, and more.',
+        title: 'Case Studies | Senior Project Director',
+        description: 'Senior Project Director case studies with production results from Pfizer, Abbott, Medtronic, and more.',
         url: `${siteConfig.url}/case-studies`,
     },
     alternates: {

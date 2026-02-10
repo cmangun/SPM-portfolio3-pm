@@ -2,7 +2,7 @@ import TeamMain from '@/pages/team/team-light/TeamMain';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Team Light",
+    title: "Senior Project Director | Team Light",
 };
 
 const page = () => {

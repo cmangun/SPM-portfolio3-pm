@@ -13,7 +13,7 @@ const FDEHero = () => {
                 <div className="max-w-xl bg-black/55 p-8 backdrop-blur-sm md:p-10 rounded-lg">
                     {/* ATS CRITICAL: Role declaration in first 200 characters */}
                     <p className="text-xs uppercase tracking-[0.28em] text-white/70">
-                        Forward-Deployed AI Architect & Principal AI Platform Engineer
+                        Senior Project Director — Healthcare, Regulated Marketing &amp; AI-Enabled Platforms
                     </p>
 
                     <h1 className="mt-3 text-4xl font-extrabold leading-[0.95] tracking-tight text-white md:text-5xl">
@@ -22,14 +22,13 @@ const FDEHero = () => {
 
                     {/* ATS CRITICAL: Explicit role statement */}
                     <h2 className="mt-3 text-xl font-semibold tracking-tight text-white md:text-2xl">
-                        Forward-Deployed AI Architect
+                        Senior Project Director
                     </h2>
 
                     {/* ATS/AEO CRITICAL: Primary description with key terms */}
                     <p className="mt-4 text-sm leading-relaxed text-white/85 md:text-base">
-                        I design, deploy, and operate production AI systems for regulated enterprises, 
-                        with end-to-end ownership across architecture, MLOps, governance, compliance, 
-                        and long-term reliability.
+                        I lead regulated healthcare programs — coordinating strategy, compliance, 
+                        and cross-functional delivery to produce measurable results on time and on brand.
                     </p>
 
                     <div className="mt-6 flex flex-wrap items-center gap-4">
@@ -50,18 +49,18 @@ const FDEHero = () => {
 
                     {/* ATS/AEO CRITICAL: Specialization line */}
                     <p className="mt-4 text-[11px] leading-snug text-white/55">
-                        Specializing in Retrieval-Augmented Generation (RAG), enterprise knowledge platforms, 
-                        and AI governance for healthcare and regulated environments.
+                        15+ years leading regulated healthcare programs across pharma, diagnostics, 
+                        medical devices, and enterprise marketing environments.
                     </p>
 
                     <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-xs text-white/60">
-                        <span>GCP Cloud Architect</span>
+                        <span>Six Sigma Black Belt</span>
                         <span aria-hidden="true">•</span>
-                        <span>Google Professional ML Engineer</span>
+                        <span>Scrum Master CSM</span>
                         <span aria-hidden="true">•</span>
-                        <span>Azure AI Engineer Associate</span>
+                        <span>Stanford AI/ML Healthcare</span>
                         <span aria-hidden="true">•</span>
-                        <span>AWS ML Specialty</span>
+                        <span>AWS Solutions Architect</span>
                     </div>
 
                     <div className="mt-6 text-xs text-white/60">

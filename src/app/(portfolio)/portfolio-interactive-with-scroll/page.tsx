@@ -2,7 +2,7 @@ import PortfolioInteractiveScroll from '@/pages/portfolios/portfolio-interactive
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Interactive With Scroll",
+    title: "Senior Project Director | Portfolio Interactive With Scroll",
 };
 
 const page = () => {

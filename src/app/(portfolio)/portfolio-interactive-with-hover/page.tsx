@@ -2,7 +2,7 @@ import PortfolioInteractiveHover from '@/pages/portfolios/Portfolio-Interactive/
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Interactive With Hover",
+    title: "Senior Project Director | Portfolio Interactive With Hover",
 };
 
 const page = () => {

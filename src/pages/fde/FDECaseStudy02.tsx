@@ -238,17 +238,17 @@ const FDECaseStudy02 = () => {
                     
                     <div className="fde-hero-container">
                       <div className="fde-hero-left">
-                        <h1 className="fde-hero-title">Enterprise AI/ML Playbook</h1>
-                        <p className="fde-hero-subtitle">12-Month Production Roadmap for Regulated Environments</p>
+                        <h1 className="fde-hero-title">$51M Healthcare Portfolio</h1>
+                        <p className="fde-hero-subtitle">Multi-Brand Delivery Across 13 Pharmaceutical Brands</p>
                         
                         <div className="fde-hero-meta" style={{ marginTop: '32px' }}>
                           <div style={{ padding: '20px 0', borderBottom: '1px solid #e5e5e5' }}>
                             <div style={{ fontSize: '12px', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px', color: '#999', marginBottom: '12px' }}>Problem</div>
-                            <div style={{ fontSize: '15px', color: '#1a1a1a', lineHeight: '1.5' }}>Enterprise AI programs fail from missing evidence: unclear intent, no acceptance criteria, no telemetry contracts, no rollback plans, and no operating owners</div>
+                            <div style={{ fontSize: '15px', color: '#1a1a1a', lineHeight: '1.5' }}>Enterprise AI programs fail from missing evidence: unclear intent, no acceptance criteria, no telemetry contracts, no rollback plans, and no operating owners. Managing 13 concurrent pharma brands required a scalable delivery framework with governance, compliance, and cross-functional alignment</div>
                           </div>
                           <div style={{ padding: '20px 0' }}>
                             <div style={{ fontSize: '12px', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px', color: '#999', marginBottom: '12px' }}>Solution</div>
-                            <div style={{ fontSize: '15px', color: '#1a1a1a', lineHeight: '1.5' }}>A 12-month phased roadmap with governance contracts, economic kill criteria, and failure autopsies that force decisions earlier—before they become expensive</div>
+                            <div style={{ fontSize: '15px', color: '#1a1a1a', lineHeight: '1.5' }}>Directed $51M portfolio across Novartis (6 brands) and Sanofi (7 brands) with structured governance, phased delivery, and cross-functional team scaling from 5 to 60+ members</div>
                           </div>
                         </div>
                       </div>
@@ -290,7 +290,7 @@ const FDECaseStudy02 = () => {
                     
                     {/* DIAGNOSE */}
                     <AccordionSection
-                      title="Diagnose"
+                      title="Discovery & Assessment"
                       subtitle="Why enterprise AI programs fail: patterns from $180M+ in documented losses"
                       isOpen={openSections.diagnose}
                       onToggle={() => toggleSection('diagnose')}
@@ -362,7 +362,7 @@ const FDECaseStudy02 = () => {
 
                     {/* ARCHITECT */}
                     <AccordionSection
-                      title="Architect"
+                      title="Planning & Alignment"
                       subtitle="12-month phased roadmap with governance contracts at every phase exit"
                       isOpen={openSections.architect}
                       onToggle={() => toggleSection('architect')}
@@ -459,7 +459,7 @@ const FDECaseStudy02 = () => {
 
                     {/* ENGINEER */}
                     <AccordionSection
-                      title="Engineer"
+                      title="Execution & Delivery"
                       subtitle="139-chart taxonomy, executive control surface, LLM-specific controls"
                       isOpen={openSections.engineer}
                       onToggle={() => toggleSection('engineer')}
@@ -545,7 +545,7 @@ const FDECaseStudy02 = () => {
 
                     {/* ENABLE */}
                     <AccordionSection
-                      title="Enable"
+                      title="Launch & Adoption"
                       subtitle="Implementation templates, model cards, incident response, adoption tracking"
                       isOpen={openSections.enable}
                       onToggle={() => toggleSection('enable')}

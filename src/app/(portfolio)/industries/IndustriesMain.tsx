@@ -268,7 +268,7 @@ const IndustriesMain = () => {
                     <p className="industries-hero-eyebrow">Industries</p>
                     <h1 className="industries-hero-title">Regulated AI Expertise</h1>
                     <p className="industries-hero-subtitle">
-                        15+ years delivering production AI systems for healthcare's most demanding environments.
+                        15+ years leading regulated healthcare programs across pharma, diagnostics, medical devices, and enterprise marketing.
                     </p>
                 </section>
 

@@ -2,7 +2,7 @@ import ShopMain from '@/pages/shops/shop/ShopMain';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Shop Main",
+    title: "Senior Project Director | Shop Main",
 };
 
 const page = () => {

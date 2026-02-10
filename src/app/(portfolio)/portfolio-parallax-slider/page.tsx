@@ -2,7 +2,7 @@ import PortfolioParallaxSlider from '@/pages/portfolios/portfolio-parallax-slide
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Parallax Slider",
+    title: "Senior Project Director | Portfolio Parallax Slider",
 };
 
 const page = () => {

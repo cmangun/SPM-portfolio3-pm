@@ -3,133 +3,44 @@ import PortfolioWebglHeader from '@/layouts/headers/PortfolioWebglHeader';
 import BackToTop from '@/components/shared/BackToTop/BackToTop';
 import Link from 'next/link';
 
-const advisoryServices = [
+const phases = [
     {
-        category: 'Strategic Advisory',
-        services: [
-            {
-                title: 'AI Readiness Assessment',
-                price: '$8,500',
-                duration: '1 week',
-                description: 'Comprehensive evaluation of your organization\'s data infrastructure, team capabilities, and regulatory posture for AI/ML adoption.',
-                deliverable: 'Executive roadmap with prioritized initiatives and ROI projections.'
-            },
-            {
-                title: 'ML Strategy & Roadmap',
-                price: '$15,000',
-                duration: '2-3 weeks',
-                description: 'Define your 12-24 month AI/ML vision aligned with business objectives, clinical workflows, and compliance requirements.',
-                deliverable: 'Includes build-vs-buy analysis and vendor landscape review.'
-            },
-            {
-                title: 'Board/Executive AI Briefing',
-                price: '$4,500',
-                duration: 'Half-day',
-                description: 'Demystify AI for leadership. Covers opportunity identification, risk landscape, competitive positioning, and investment considerations—tailored to healthcare and pharma.',
-                deliverable: null
-            },
-        ]
+        number: '01',
+        title: 'Discovery & Kickoff',
+        description: 'Stakeholder interviews, scope definition, dependency mapping, and alignment on objectives, constraints, and success criteria.',
+        deliverables: ['Kickoff deck & alignment summary', 'Stakeholder map', 'Scope & dependency documentation', 'Risk register initialization'],
     },
     {
-        category: 'Architecture & Technical Review',
-        services: [
-            {
-                title: 'Production ML Architecture Review',
-                price: '$12,000',
-                duration: '2 weeks',
-                description: 'Deep-dive audit of your existing ML systems for scalability, reliability, and compliance gaps.',
-                deliverable: 'Prioritized remediation plan with effort estimates.'
-            },
-            {
-                title: 'HIPAA/PHI Data Pipeline Audit',
-                price: '$18,000',
-                duration: '2-3 weeks',
-                description: 'End-to-end review of data flows, access controls, encryption, and audit logging.',
-                deliverable: 'Identifies compliance vulnerabilities before they become findings.'
-            },
-            {
-                title: 'MLOps Maturity Assessment',
-                price: '$10,000',
-                duration: '1-2 weeks',
-                description: 'Evaluate your model lifecycle management, CI/CD practices, monitoring, and drift detection against industry benchmarks.',
-                deliverable: 'Maturity scorecard with gap analysis.'
-            },
-            {
-                title: 'Cloud Cost & Efficiency Review',
-                price: '$7,500',
-                duration: '1 week',
-                description: 'Identify waste and optimization opportunities in your ML infrastructure across AWS, Azure, or GCP.',
-                deliverable: 'Typical savings: 20-40% reduction in compute spend.'
-            },
-        ]
+        number: '02',
+        title: 'Alignment & Planning',
+        description: 'Timeline creation, milestone definition, approval matrices, resource planning, and establishment of governance cadences.',
+        deliverables: ['Project timeline with milestones', 'RACI / approval matrix', 'Budget & resource plan', 'Status meeting cadence'],
     },
     {
-        category: 'Regulatory & Compliance',
-        services: [
-            {
-                title: 'FDA 510(k) AI/ML Preparation',
-                price: '$25,000+',
-                duration: '4-6 weeks',
-                description: 'Guidance on documentation, validation protocols, and submission strategy for Software as a Medical Device (SaMD).',
-                deliverable: 'Includes predetermined change control plan framework.'
-            },
-            {
-                title: 'RAG System Compliance Framework',
-                price: '$20,000',
-                duration: '3-4 weeks',
-                description: 'Design and implement guardrails for retrieval-augmented generation in regulated contexts—MLR review integration, hallucination mitigation, audit trails, and human-in-the-loop workflows.',
-                deliverable: null
-            },
-            {
-                title: 'Clinical AI Governance Design',
-                price: '$15,000',
-                duration: '2-3 weeks',
-                description: 'Establish policies, review boards, and monitoring protocols for responsible AI deployment in clinical settings.',
-                deliverable: 'Aligns with emerging FDA and ONC guidance.'
-            },
-        ]
+        number: '03',
+        title: 'Execution & Coordination',
+        description: 'Weekly status cadences, cross-team facilitation, risk tracking, MLR submission management, and deliverable progression through review cycles.',
+        deliverables: ['Weekly status reports & action logs', 'Risk & issue tracking', 'MLR submission tracking', 'Cross-functional coordination'],
     },
     {
-        category: 'Implementation Support',
-        services: [
-            {
-                title: 'Production Deployment Sprint',
-                price: '$35,000+',
-                duration: '4-6 weeks',
-                description: 'Hands-on leadership to take a validated model from development to production-ready deployment with monitoring, alerting, and rollback capabilities.',
-                deliverable: null
-            },
-            {
-                title: 'Team Scaling & Hiring Strategy',
-                price: '$8,000',
-                duration: '1-2 weeks',
-                description: 'Define roles, interview frameworks, and organizational structure for building or expanding your ML engineering team.',
-                deliverable: 'Includes compensation benchmarking.'
-            },
-            {
-                title: 'Vendor Selection & Due Diligence',
-                price: '$12,000',
-                duration: '2 weeks',
-                description: 'Structured evaluation of AI/ML vendors, platforms, or acquisition targets.',
-                deliverable: 'Technical deep-dive plus commercial and integration risk assessment.'
-            },
-        ]
+        number: '04',
+        title: 'Delivery & Governance',
+        description: 'MLR review management, deliverable QA against brand and regulatory standards, handoff documentation, and compliance sign-off.',
+        deliverables: ['Deliverable acceptance & QA', 'Compliance documentation', 'Handoff packages', 'Stakeholder sign-off'],
+    },
+    {
+        number: '05',
+        title: 'Optimization & Handoff',
+        description: 'Post-delivery review, process improvement documentation, adoption support, and knowledge transfer to ensure continuity.',
+        deliverables: ['Post-mortem & lessons learned', 'Process improvement recommendations', 'Adoption & training support', 'Knowledge transfer documentation'],
     },
 ];
 
-const retainerOptions = [
-    {
-        title: 'Fractional AI Architect',
-        price: '$12,000/month',
-        hours: '15-20 hrs/month',
-        description: 'Ongoing strategic and technical guidance. Includes architecture reviews, team mentorship, vendor negotiations, and executive advisory.',
-    },
-    {
-        title: 'Advisory Board Seat',
-        price: '$4,000/month',
-        hours: '4-6 hrs/month',
-        description: 'Strategic counsel, investor/board preparation, and network access. Ideal for startups navigating healthcare AI.',
-    },
+const principles = [
+    { title: 'Clarity Under Constraint', description: 'Regulated environments demand precision. I ensure every deliverable, decision, and communication is clear, documented, and defensible.' },
+    { title: 'Proactive Risk Management', description: 'I anticipate blockers before they escalate. Risk registers, dependency maps, and early escalation protocols keep programs on track.' },
+    { title: 'Cross-Functional Alignment', description: 'Healthcare programs involve medical, legal, regulatory, creative, strategy, and production teams. I keep them synchronized without slowing velocity.' },
+    { title: 'Governance Without Friction', description: 'Structure should accelerate delivery, not impede it. I build governance that teams actually use — lightweight, visible, and actionable.' },
 ];
 
 const AdvisoryMain = () => {
@@ -142,7 +53,7 @@ const AdvisoryMain = () => {
                 }
                 .advisory-hero {
                     padding: 140px 40px 80px;
-                    max-width: 1200px;
+                    max-width: 1000px;
                     margin: 0 auto;
                 }
                 .advisory-hero-eyebrow {
@@ -157,11 +68,11 @@ const AdvisoryMain = () => {
                     font-size: 96px;
                     font-weight: 700;
                     margin: 0 0 24px;
-                    line-height: 1.0;
+                    line-height: 1.1;
                     color: #F0EEE9;
                 }
                 .advisory-hero-subtitle {
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: 400;
                     color: rgba(255,255,255,0.7);
                     max-width: 600px;
@@ -169,180 +80,113 @@ const AdvisoryMain = () => {
                 }
                 .advisory-section {
                     padding: 60px 40px;
-                    max-width: 1200px;
+                    max-width: 1000px;
                     margin: 0 auto;
                     border-top: 1px solid rgba(255,255,255,0.08);
                 }
-                .section-header {
+                .section-title {
+                    font-size: 12px;
+                    font-weight: 600;
+                    letter-spacing: 0.2em;
+                    text-transform: uppercase;
+                    color: rgba(255,255,255,0.4);
                     margin-bottom: 40px;
                 }
-                .section-title {
-                    font-size: 28px;
+                .phase-card {
+                    display: flex;
+                    gap: 32px;
+                    margin-bottom: 48px;
+                    padding-bottom: 48px;
+                    border-bottom: 1px solid rgba(255,255,255,0.06);
+                }
+                .phase-card:last-child {
+                    border-bottom: none;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+                .phase-number {
+                    font-size: 48px;
                     font-weight: 700;
+                    color: rgba(255,255,255,0.1);
+                    min-width: 80px;
+                    line-height: 1;
+                }
+                .phase-content {
+                    flex: 1;
+                }
+                .phase-title {
+                    font-size: 24px;
+                    font-weight: 600;
                     color: #ffffff;
+                    margin: 0 0 12px;
+                }
+                .phase-description {
+                    font-size: 15px;
+                    line-height: 1.7;
+                    color: rgba(255,255,255,0.65);
+                    margin-bottom: 16px;
+                }
+                .phase-deliverables {
+                    list-style: none;
+                    padding: 0;
                     margin: 0;
                 }
-                .services-list {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 16px;
+                .phase-deliverables li {
+                    font-size: 13px;
+                    color: rgba(255,255,255,0.5);
+                    margin-bottom: 6px;
+                    padding-left: 16px;
+                    position: relative;
                 }
-                .service-row {
+                .phase-deliverables li::before {
+                    content: '—';
+                    position: absolute;
+                    left: 0;
+                    color: rgba(255,255,255,0.2);
+                }
+                .principles-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 24px;
+                }
+                .principle-card {
                     background: rgba(255,255,255,0.03);
                     border: 1px solid rgba(255,255,255,0.08);
                     border-radius: 8px;
-                    padding: 28px 32px;
-                    display: grid;
-                    grid-template-columns: 1fr auto auto;
-                    gap: 32px;
-                    align-items: start;
-                    transition: all 0.3s ease;
+                    padding: 28px;
                 }
-                .service-row:hover {
-                    background: rgba(255,255,255,0.05);
-                    border-color: rgba(255,255,255,0.12);
-                }
-                .service-info {
-                    flex: 1;
-                }
-                .service-title {
-                    font-size: 18px;
+                .principle-title {
+                    font-size: 16px;
                     font-weight: 600;
                     color: #ffffff;
                     margin: 0 0 8px;
                 }
-                .service-description {
+                .principle-description {
                     font-size: 14px;
                     line-height: 1.6;
                     color: rgba(255,255,255,0.6);
                     margin: 0;
                 }
-                .service-deliverable {
-                    font-size: 13px;
-                    color: rgba(255,255,255,0.5);
-                    margin-top: 8px;
-                    font-style: italic;
-                }
-                .service-price {
-                    font-size: 20px;
-                    font-weight: 700;
-                    color: #ffffff;
-                    white-space: nowrap;
-                    min-width: 120px;
-                    text-align: right;
-                }
-                .service-duration {
-                    font-size: 14px;
-                    font-weight: 500;
-                    color: rgba(255,255,255,0.5);
-                    white-space: nowrap;
-                    min-width: 100px;
-                    text-align: right;
-                }
-                .retainer-section {
-                    padding: 80px 40px;
-                    max-width: 1200px;
-                    margin: 0 auto;
-                    border-top: 1px solid rgba(255,255,255,0.08);
-                }
-                .retainer-grid {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 24px;
-                    margin-top: 40px;
-                }
-                .retainer-card {
-                    background: rgba(255,255,255,0.03);
-                    border: 1px solid rgba(255,255,255,0.08);
-                    border-radius: 12px;
-                    padding: 40px;
-                    transition: all 0.3s ease;
-                }
-                .retainer-card:hover {
-                    background: rgba(255,255,255,0.06);
-                    border-color: rgba(255,255,255,0.15);
-                }
-                .retainer-title {
-                    font-size: 24px;
-                    font-weight: 700;
-                    color: #ffffff;
-                    margin: 0 0 8px;
-                }
-                .retainer-meta {
-                    display: flex;
-                    gap: 16px;
-                    margin-bottom: 16px;
-                }
-                .retainer-price {
-                    font-size: 18px;
-                    font-weight: 600;
-                    color: #ffffff;
-                }
-                .retainer-hours {
-                    font-size: 14px;
-                    color: rgba(255,255,255,0.5);
-                }
-                .retainer-description {
-                    font-size: 15px;
-                    line-height: 1.7;
-                    color: rgba(255,255,255,0.6);
-                    margin: 0;
-                }
-                .includes-section {
-                    padding: 60px 40px 100px;
-                    max-width: 1200px;
-                    margin: 0 auto;
-                    border-top: 1px solid rgba(255,255,255,0.08);
-                }
-                .includes-title {
-                    font-size: 14px;
-                    font-weight: 600;
-                    letter-spacing: 0.1em;
-                    text-transform: uppercase;
-                    color: rgba(255,255,255,0.4);
-                    margin-bottom: 24px;
-                }
-                .includes-list {
-                    display: flex;
-                    gap: 40px;
-                    flex-wrap: wrap;
-                }
-                .includes-item {
-                    font-size: 15px;
-                    color: rgba(255,255,255,0.7);
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                }
-                .includes-item::before {
-                    content: '✓';
-                    color: rgba(255,255,255,0.4);
-                }
                 .advisory-cta {
                     text-align: left;
-                    padding: 80px 40px 120px;
+                    padding: 80px 40px 100px;
                     border-top: 1px solid rgba(255,255,255,0.08);
-                    max-width: 1200px;
+                    max-width: 1000px;
                     margin: 0 auto;
                 }
                 .cta-text {
-                    font-size: 28px;
+                    font-size: 24px;
                     font-weight: 500;
-                    margin-bottom: 12px;
+                    margin-bottom: 24px;
                     color: rgba(255,255,255,0.9);
-                }
-                .cta-subtext {
-                    font-size: 16px;
-                    color: rgba(255,255,255,0.5);
-                    margin-bottom: 32px;
                 }
                 .cta-button {
                     display: inline-block;
-                    padding: 18px 48px;
+                    padding: 16px 40px;
                     background: #ffffff;
-                    color: #0a0a0a !important;
+                    color: #0a0a0a;
                     text-decoration: none;
-                    font-size: 15px;
+                    font-size: 14px;
                     font-weight: 600;
                     border-radius: 4px;
                     transition: all 0.3s ease;
@@ -350,39 +194,23 @@ const AdvisoryMain = () => {
                 .cta-button:hover {
                     background: rgba(255,255,255,0.9);
                     transform: translateY(-2px);
-                    color: #0a0a0a !important;
                 }
                 @media (max-width: 991px) {
                     .advisory-hero {
                         padding: 120px 20px 60px;
                     }
                     .advisory-hero-title {
-                        font-size: 48px;
+                        font-size: 56px;
                     }
                     .advisory-section {
                         padding: 40px 20px;
                     }
-                    .service-row {
-                        grid-template-columns: 1fr;
-                        gap: 16px;
-                        padding: 24px;
-                    }
-                    .service-price,
-                    .service-duration {
-                        text-align: left;
-                    }
-                    .retainer-grid {
-                        grid-template-columns: 1fr;
-                    }
-                    .retainer-section {
-                        padding: 60px 20px;
-                    }
-                    .includes-section {
-                        padding: 40px 20px 80px;
-                    }
-                    .includes-list {
+                    .phase-card {
                         flex-direction: column;
                         gap: 16px;
+                    }
+                    .principles-grid {
+                        grid-template-columns: 1fr;
                     }
                 }
             `}</style>
@@ -391,72 +219,48 @@ const AdvisoryMain = () => {
             <BackToTop />
             
             <main>
-                {/* Hero Section */}
                 <section className="advisory-hero">
-                    <p className="advisory-hero-eyebrow">Advisory Services</p>
-                    <h1 className="advisory-hero-title">Healthcare AI Advisory</h1>
+                    <p className="advisory-hero-eyebrow">Delivery Methodology</p>
+                    <h1 className="advisory-hero-title">Project Approach</h1>
                     <p className="advisory-hero-subtitle">
-                        Bespoke AI solutions for regulated environments. Strategic guidance from readiness assessment through production deployment.
+                        A structured, repeatable approach to delivering regulated healthcare programs — 
+                        from discovery through launch and beyond. Built for clarity, compliance, and 
+                        cross-functional alignment.
                     </p>
                 </section>
 
-                {/* Service Categories */}
-                {advisoryServices.map((category, catIndex) => (
-                    <section key={catIndex} className="advisory-section">
-                        <div className="section-header">
-                            <h2 className="section-title">{category.category}</h2>
+                <section className="advisory-section">
+                    <h2 className="section-title">Delivery Phases</h2>
+                    {phases.map((phase) => (
+                        <div key={phase.number} className="phase-card">
+                            <span className="phase-number">{phase.number}</span>
+                            <div className="phase-content">
+                                <h3 className="phase-title">{phase.title}</h3>
+                                <p className="phase-description">{phase.description}</p>
+                                <ul className="phase-deliverables">
+                                    {phase.deliverables.map((d, i) => (
+                                        <li key={i}>{d}</li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
-                        <div className="services-list">
-                            {category.services.map((service, svcIndex) => (
-                                <div key={svcIndex} className="service-row">
-                                    <div className="service-info">
-                                        <h3 className="service-title">{service.title}</h3>
-                                        <p className="service-description">{service.description}</p>
-                                        {service.deliverable && (
-                                            <p className="service-deliverable">{service.deliverable}</p>
-                                        )}
-                                    </div>
-                                    <div className="service-price">{service.price}</div>
-                                    <div className="service-duration">{service.duration}</div>
-                                </div>
-                            ))}
-                        </div>
-                    </section>
-                ))}
+                    ))}
+                </section>
 
-                {/* Retainer Options */}
-                <section className="retainer-section">
-                    <div className="section-header">
-                        <h2 className="section-title">Retainer Options</h2>
-                    </div>
-                    <div className="retainer-grid">
-                        {retainerOptions.map((retainer, index) => (
-                            <div key={index} className="retainer-card">
-                                <h3 className="retainer-title">{retainer.title}</h3>
-                                <div className="retainer-meta">
-                                    <span className="retainer-price">{retainer.price}</span>
-                                    <span className="retainer-hours">{retainer.hours}</span>
-                                </div>
-                                <p className="retainer-description">{retainer.description}</p>
+                <section className="advisory-section">
+                    <h2 className="section-title">Operating Principles</h2>
+                    <div className="principles-grid">
+                        {principles.map((p, i) => (
+                            <div key={i} className="principle-card">
+                                <h3 className="principle-title">{p.title}</h3>
+                                <p className="principle-description">{p.description}</p>
                             </div>
                         ))}
                     </div>
                 </section>
 
-                {/* All Engagements Include */}
-                <section className="includes-section">
-                    <h3 className="includes-title">All engagements include</h3>
-                    <div className="includes-list">
-                        <span className="includes-item">Signed NDA and BAA (where applicable)</span>
-                        <span className="includes-item">Executive summary deliverable</span>
-                        <span className="includes-item">30-day follow-up call</span>
-                    </div>
-                </section>
-
-                {/* CTA Section */}
                 <section className="advisory-cta">
-                    <p className="cta-text">Ready to discuss your AI initiative?</p>
-                    <p className="cta-subtext">Schedule a discovery call to scope your engagement</p>
+                    <p className="cta-text">Ready to discuss your next healthcare program?</p>
                     <Link href="/contact" className="cta-button">
                         Get in Touch
                     </Link>

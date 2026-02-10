@@ -28,7 +28,7 @@ const FDEFooter: React.FC<FooterProps> = ({ bgColor = "#1a1a1a", className = "",
                             color: 'rgba(255,255,255,0.6)', 
                             margin: '8px 0 0 0' 
                         }}>
-                            Forward Deployed Engineer Portfolio
+                            Senior Project Director Portfolio
                         </p>
                     </div>
                     

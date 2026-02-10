@@ -2,7 +2,7 @@ import PortfolioCreativeTextSlider from '@/pages/portfolios/portfolio-creative-t
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Creative Text Slider",
+    title: "Senior Project Director | Portfolio Creative Text Slider",
 };
 
 const page = () => {

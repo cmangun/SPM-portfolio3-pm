@@ -3,7 +3,7 @@ import CreativeStudioMain from '@/pages/homes/creative-studio/CreativeStudioMain
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Creative Studio Light",
+    title: "Senior Project Director | Creative Studio Light",
 };
 
 const page = () => {

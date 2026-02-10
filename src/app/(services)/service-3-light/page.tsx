@@ -2,7 +2,7 @@ import ServiceThreeMain from '@/pages/services/service-3/ServiceThreeMain';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Service 3 Light",
+    title: "Senior Project Director | Service 3 Light",
 };
 
 const page = () => {

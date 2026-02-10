@@ -2,7 +2,7 @@ import PortfolioColTwoMain from '@/pages/portfolios/portfolio-col-2/PortfolioCol
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Col 2 Light",
+    title: "Senior Project Director | Portfolio Col 2 Light",
 };
 
 const page = () => {

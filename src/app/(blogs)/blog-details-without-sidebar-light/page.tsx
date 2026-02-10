@@ -2,7 +2,7 @@ import BlogDetailsWithoutSidebar from '@/pages/blogs/blog-details-without-sideba
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Blog Details Without Sidebar Light",
+    title: "Senior Project Director | Blog Details Without Sidebar Light",
 };
 
 const page = () => {

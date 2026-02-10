@@ -2,7 +2,7 @@ import PortfolioDetailsGallery from '@/pages/portfolios/portfolio-details-galler
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Details Gallery Light",
+    title: "Senior Project Director | Portfolio Details Gallery Light",
 };
 
 const page = () => {

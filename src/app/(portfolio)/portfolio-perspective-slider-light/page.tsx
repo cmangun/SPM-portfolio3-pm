@@ -2,7 +2,7 @@ import PortfolioPerspectiveSlider from '@/pages/portfolios/portfolio-perspective
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Perspective Slider",
+    title: "Senior Project Director | Portfolio Perspective Slider",
 };
 
 const page = () => {

@@ -2,7 +2,7 @@ import DigitalMarketingMain from '@/pages/homes/digital-marketing/DigitalMarketi
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Digital Marketing Light",
+    title: "Senior Project Director | Digital Marketing Light",
 };
 
 const page = () => {

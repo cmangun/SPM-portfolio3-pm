@@ -2,7 +2,7 @@ import PortfolioCreativeThumbSlider from '@/pages/portfolios/portfolio-creative/
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Creative Thumb Slider",
+    title: "Senior Project Director | Portfolio Creative Thumb Slider",
 };
 
 const page = () => {

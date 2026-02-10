@@ -136,15 +136,15 @@ const FDECaseStudy03 = () => {
                     <div className="fde-hero-container">
                       <div className="fde-hero-left">
                         <h1 className="fde-hero-title">Alinity</h1>
-                        <p className="fde-hero-subtitle">Advanced Analytics for 27,000+ Diagnostic Devices</p>
+                        <p className="fde-hero-subtitle">Global Data Migration for 27,000+ Diagnostic Devices</p>
                         <div className="fde-hero-meta" style={{ marginTop: '32px' }}>
                           <div style={{ padding: '20px 0', borderBottom: '1px solid #e5e5e5' }}>
                             <div style={{ fontSize: '12px', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px', color: '#999', marginBottom: '12px' }}>Problem</div>
-                            <div style={{ fontSize: '15px', color: '#1a1a1a', lineHeight: '1.5' }}>Legacy on-prem ML pipeline couldn&apos;t scale for 27,000 devices; 6-month deployment cycles; FDA audit concerns</div>
+                            <div style={{ fontSize: '15px', color: '#1a1a1a', lineHeight: '1.5' }}>Legacy data pipeline couldn&apos;t scale across 27,000 devices; 6-month deployment cycles; FDA audit compliance at risk across distributed global teams</div>
                           </div>
                           <div style={{ padding: '20px 0' }}>
                             <div style={{ fontSize: '12px', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px', color: '#999', marginBottom: '12px' }}>Solution</div>
-                            <div style={{ fontSize: '15px', color: '#1a1a1a', lineHeight: '1.5' }}>HIPAA-compliant AWS migration with zero audit findings, reducing deployment time from 6 months to 3 weeks</div>
+                            <div style={{ fontSize: '15px', color: '#1a1a1a', lineHeight: '1.5' }}>Managed HIPAA-compliant AWS migration with zero FDA audit findings, reducing deployment cycles from 6 months to 3 weeks through disciplined delivery planning</div>
                           </div>
                         </div>
                       </div>
@@ -171,7 +171,7 @@ const FDECaseStudy03 = () => {
                   <div className="fde-accordion-bg">
                     <div className="fde-accordion-wrapper">
                     
-                    <AccordionSection title="Diagnose" subtitle="Legacy constraints, compliance gaps, scalability limits" isOpen={openSections.diagnose} onToggle={() => toggleSection('diagnose')}>
+                    <AccordionSection title="Discovery & Assessment" subtitle="Legacy constraints, compliance gaps, scalability limits" isOpen={openSections.diagnose} onToggle={() => toggleSection('diagnose')}>
                       <div className="fde-section-content">
                         <div className="fde-two-column">
                           <div className="fde-column-text">
@@ -201,7 +201,7 @@ const FDECaseStudy03 = () => {
                       </div>
                     </AccordionSection>
 
-                    <AccordionSection title="Architect" subtitle="GxP-compliant AWS, HIPAA controls, audit architecture" isOpen={openSections.architect} onToggle={() => toggleSection('architect')}>
+                    <AccordionSection title="Planning & Alignment" subtitle="GxP-compliant AWS, HIPAA controls, audit architecture" isOpen={openSections.architect} onToggle={() => toggleSection('architect')}>
                       <div className="fde-section-content">
                         <div className="fde-two-column">
                           <div className="fde-column-text">
@@ -228,7 +228,7 @@ const FDECaseStudy03 = () => {
                       </div>
                     </AccordionSection>
 
-                    <AccordionSection title="Engineer" subtitle="Migration execution, SLOs, reliability metrics" isOpen={openSections.engineer} onToggle={() => toggleSection('engineer')}>
+                    <AccordionSection title="Execution & Delivery" subtitle="Migration execution, performance standards, reliability metrics" isOpen={openSections.engineer} onToggle={() => toggleSection('engineer')}>
                       <div className="fde-section-content">
                         <div className="fde-two-column">
                           <div className="fde-column-text">
@@ -237,12 +237,12 @@ const FDECaseStudy03 = () => {
                             <div className="fde-inline-metrics">
                               <div className="fde-inline-metric"><strong>99.99%</strong><span>uptime SLA</span></div>
                               <div className="fde-inline-metric"><strong>150K</strong><span>events/sec peak</span></div>
-                              <div className="fde-inline-metric"><strong>&lt;100ms</strong><span>p95 latency</span></div>
+                              <div className="fde-inline-metric"><strong>&lt;100ms</strong><span>response time</span></div>
                             </div>
                           </div>
                           <div className="fde-column-image">
                             <div style={{ backgroundColor: '#f8f8f8', padding: '20px', borderRadius: '8px', border: '1px solid #e5e5e5' }}>
-                              <div style={{ fontSize: '11px', fontWeight: '600', color: '#666', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Production SLOs</div>
+                              <div style={{ fontSize: '11px', fontWeight: '600', color: '#666', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Performance Standards</div>
                               {[{m:'Deployment Time',b:'6 mo',a:'3 wk',c:'#333'},{m:'Uptime',b:'95%',a:'99.9%',c:'#333'},{m:'FDA Findings',b:'3',a:'0',c:'#333'},{m:'Data Scientists',b:'12',a:'45',c:'#333'}].map((s,i)=><div key={i} style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'8px'}}><span style={{fontSize:'11px',color:'#333'}}>{s.m}</span><span style={{fontSize:'11px'}}><span style={{color:'#999',textDecoration:'line-through'}}>{s.b}</span> → <span style={{color:s.c,fontWeight:'600'}}>{s.a}</span></span></div>)}
                             </div>
                           </div>
@@ -254,7 +254,7 @@ const FDECaseStudy03 = () => {
                       </div>
                     </AccordionSection>
 
-                    <AccordionSection title="Enable" subtitle="Team training, runbooks, operational handoff" isOpen={openSections.enable} onToggle={() => toggleSection('enable')}>
+                    <AccordionSection title="Launch & Adoption" subtitle="Team training, runbooks, operational handoff" isOpen={openSections.enable} onToggle={() => toggleSection('enable')}>
                       <div className="fde-section-content">
                         <div className="fde-two-column">
                           <div className="fde-column-text">

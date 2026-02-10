@@ -2,7 +2,7 @@ import BrandShowcaseMain from '@/pages/portfolios/brand-showcase/BrandShowcaseMa
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Brand Showcase Light",
+    title: "Senior Project Director | Brand Showcase Light",
 };
 
 const page = () => {

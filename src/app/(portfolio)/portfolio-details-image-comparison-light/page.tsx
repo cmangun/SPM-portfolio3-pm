@@ -2,7 +2,7 @@ import PortfolioImageComparison from '@/pages/portfolios/portfolio-details-image
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Details Image Comparison",
+    title: "Senior Project Director | Portfolio Details Image Comparison",
 };
 
 const page = () => {

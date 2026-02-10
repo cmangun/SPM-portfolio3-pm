@@ -2,7 +2,7 @@ import BlogGridMain from '@/pages/blogs/blog-grid/BlogGridMain';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Blog Grid Light",
+    title: "Senior Project Director | Blog Grid Light",
 };
 
 const page = () => {

@@ -3,7 +3,7 @@ import PortfolioDetailsCreativeSlider from '@/pages/portfolios/portfolio-details
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Details Creative Slider Light",
+    title: "Senior Project Director | Portfolio Details Creative Slider Light",
 };
 
 const page = () => {

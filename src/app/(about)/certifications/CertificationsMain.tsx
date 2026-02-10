@@ -545,7 +545,7 @@ const CertificationsMain = () => {
                             Most AI projects fail not because of model accuracy, but because of 
                             infrastructure gaps, data quality issues, deployment complexity, and 
                             compliance oversights. This certification stack reflects the full spectrum 
-                            of skills required to ship production AI systems in regulated environments.
+                            of skills required to lead regulated healthcare programs across complex environments.
                         </p>
                         <div className="cert-stack-grid">
                             <div className="cert-stack-item">

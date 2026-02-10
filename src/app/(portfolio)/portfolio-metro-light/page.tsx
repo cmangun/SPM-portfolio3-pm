@@ -2,7 +2,7 @@ import PortfolioMetroMain from '@/pages/portfolios/portfolio-metro/PortfolioMetr
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Metro Light",
+    title: "Senior Project Director | Portfolio Metro Light",
 };
 
 const page = () => {

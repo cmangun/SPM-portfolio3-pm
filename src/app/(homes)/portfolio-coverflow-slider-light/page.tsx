@@ -2,7 +2,7 @@ import PortfolioCoverflowMain from '@/pages/portfolios/portfolio-coverflow/Portf
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Forward Deployed Engineer | Portfolio Coverflow Slider Light",
+  title: "Senior Project Director | Portfolio Coverflow Slider Light",
 };
 
 const page = () => {

@@ -3,23 +3,23 @@ import { Metadata } from 'next';
 import { siteConfig, generateCaseStudySchema } from '@/lib/seo-config';
 
 export const metadata: Metadata = {
-    title: "GI Genius - FDA 510(k) AI Medical Device | Forward-Deployed AI Architect Case Study",
-    description: "Forward-Deployed AI Architect case study: Guided technical strategy and regulatory documentation for FDA 510(k) cleared AI colonoscopy device achieving 99.7% sensitivity and 14% ADR improvement.",
+    title: "Medtronic GI Genius - FDA 510(k) Clearance Program | Senior Project Director Case Study",
+    description: "Senior Project Director case study: Directed FDA 510(k) clearance program for AI medical device. Coordinated clinical, regulatory, and engineering teams through successful validation. 500+ sites deployed.",
     keywords: [
-        'Forward Deployed Engineer',
-        'Principal AI Architect',
-        'Medtronic AI',
+        'Senior Project Director',
+        'Healthcare Project Management',
+        'Medtronic',
+        'GI Genius',
         'FDA 510(k)',
-        'medical device AI',
-        'AI regulatory',
-        'clinical AI',
-        'model validation',
-        'FDA compliance',
-        'healthcare AI clearance',
+        'medical device',
+        'clinical trials',
+        'regulatory clearance',
+        'project governance',
+        'healthcare launch',
     ],
     openGraph: {
-        title: "GI Genius - FDA 510(k) AI Medical Device | Christopher Mangun",
-        description: "Forward-Deployed AI Architect case study: FDA 510(k) cleared, 99.7% sensitivity, 14% ADR improvement.",
+        title: "Medtronic GI Genius - FDA 510(k) Clearance Program | Christopher Mangun",
+        description: "Senior Project Director case study: Directed FDA 510(k) clearance program for AI medical device deployed to 500+ sites.",
         url: `${siteConfig.url}/fde-case-study-06`,
     },
     alternates: {
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
 };
 
 const caseStudySchema = generateCaseStudySchema({
-    title: 'GI Genius - FDA 510(k) Cleared AI for Polyp Detection',
-    description: 'Forward-Deployed AI Architect guided technical strategy for FDA 510(k) cleared AI colonoscopy device with 99.7% sensitivity validation.',
+    title: 'Medtronic GI Genius - FDA 510(k) AI Medical Device Clearance Program',
+    description: 'Senior Project Director directed FDA 510(k) clearance program for AI medical device, coordinating clinical, regulatory, and engineering teams. Deployed to 500+ sites.',
     client: 'Medtronic',
     slug: 'fde-case-study-06',
-    systemType: 'FDA-Cleared AI Medical Device, Model Validation, Regulatory Pathway',
-    outcome: 'FDA 510(k) clearance achieved, 99.7% sensitivity, 14% ADR improvement, 500+ clinical sites',
+    systemType: 'FDA Clearance, Medical Device Launch, Clinical Trial Coordination',
+    outcome: 'FDA 510(k) cleared, 500+ sites deployed, 82,000+ procedures/month',
 });
 
 const page = () => {

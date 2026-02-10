@@ -3,7 +3,7 @@ import FashionStudioMain from '@/pages/homes/fashion-studio/FashionStudioMain';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Fashion Studio Light",
+    title: "Senior Project Director | Fashion Studio Light",
 };
 
 const page = () => {

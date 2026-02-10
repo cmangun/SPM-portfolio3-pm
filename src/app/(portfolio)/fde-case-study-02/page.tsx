@@ -3,23 +3,23 @@ import { Metadata } from 'next';
 import { siteConfig, generateCaseStudySchema } from '@/lib/seo-config';
 
 export const metadata: Metadata = {
-    title: "AI Playbooks - Multi-Tenant Compliance Platform | Forward-Deployed AI Architect Case Study",
-    description: "Forward-Deployed AI Architect case study: Delivered regulated content systems for $51M portfolio across 13 pharma brands with zero HIPAA violations over 4 years. Enterprise AI platform with compliance automation.",
+    title: "$51M Healthcare Portfolio - Multi-Brand Delivery | Senior Project Director Case Study",
+    description: "Senior Project Director case study: Directed $51M healthcare portfolio across 13 pharma brands (Novartis, Sanofi). Scaled delivery team from 5 to 60+ while maintaining timeline and regulatory compliance.",
     keywords: [
-        'Forward Deployed Engineer',
-        'Principal AI Architect',
-        'pharma AI',
-        'IPG Health',
-        'compliance automation',
-        'HIPAA compliance',
-        'multi-tenant AI',
-        'regulated AI systems',
-        'MLR automation',
-        'enterprise compliance',
+        'Senior Project Director',
+        'Healthcare Portfolio Management',
+        'Novartis',
+        'Sanofi',
+        'pharma marketing',
+        'MLR compliance',
+        'multi-brand delivery',
+        'healthcare agency',
+        'project governance',
+        'DELCI launch',
     ],
     openGraph: {
-        title: "AI Playbooks - Multi-Tenant Compliance Platform | Christopher Mangun",
-        description: "Forward-Deployed AI Architect case study: $51M portfolio, 13 pharma brands, zero HIPAA violations over 4 years.",
+        title: "$51M Healthcare Portfolio - Multi-Brand Delivery | Christopher Mangun",
+        description: "Senior Project Director case study: Directed $51M healthcare portfolio across 13 pharma brands, scaling team from 5 to 60+.",
         url: `${siteConfig.url}/fde-case-study-02`,
     },
     alternates: {
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
 };
 
 const caseStudySchema = generateCaseStudySchema({
-    title: 'AI Playbooks - Regulated Content Systems for Global Pharmaceutical Markets',
-    description: 'Forward-Deployed AI Architect delivered multi-tenant compliance platform managing $51M portfolio across 13 pharma brands with zero HIPAA violations.',
-    client: 'IPG Health',
+    title: '$51M Healthcare Portfolio - Multi-Brand Pharmaceutical Delivery',
+    description: 'Senior Project Director directed $51M healthcare portfolio across 13 pharma brands, scaling team from 5 to 60+ with regulatory compliance.',
+    client: 'IPG Health / Novartis / Sanofi',
     slug: 'fde-case-study-02',
-    systemType: 'Multi-Tenant Compliance Platform, AI Governance, MLR Automation',
-    outcome: 'Production AI system with zero HIPAA violations over 4 years, 60% cost reduction, scaled team from 5 to 60+ engineers',
+    systemType: 'Portfolio Management, Multi-Brand Delivery, Healthcare Marketing',
+    outcome: '$51M portfolio managed, 13 brands delivered, team scaled 5 to 60+',
 });
 
 const page = () => {

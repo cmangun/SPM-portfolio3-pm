@@ -3,23 +3,23 @@ import { Metadata } from 'next';
 import { siteConfig, generateCaseStudySchema } from '@/lib/seo-config';
 
 export const metadata: Metadata = {
-    title: "Libre CGM - Patient-Critical Real-Time Systems | Forward-Deployed AI Architect Case Study",
-    description: "Forward-Deployed AI Architect case study: Rebuilt real-time glucose monitoring pipeline for 4M+ patients achieving 99.99% alert delivery with sub-second latency and zero missed critical alerts.",
+    title: "Abbott Libre CGM - Patient-Critical Platform Delivery | Senior Project Director Case Study",
+    description: "Senior Project Director case study: Led delivery of patient-critical monitoring platform serving 4M+ patients. Achieved 99.99% system reliability through rigorous project governance.",
     keywords: [
-        'Forward Deployed Engineer',
-        'Principal AI Architect',
-        'Abbott AI',
-        'medical device AI',
-        'real-time systems',
-        'patient safety',
-        'CGM systems',
-        'healthcare reliability',
-        'critical systems',
-        'HIPAA compliance',
+        'Senior Project Director',
+        'Healthcare Project Management',
+        'Abbott',
+        'Libre CGM',
+        'patient monitoring',
+        'medical device',
+        'project governance',
+        'regulated delivery',
+        'healthcare technology',
+        'continuous glucose monitoring',
     ],
     openGraph: {
-        title: "Libre CGM - Patient-Critical Real-Time Systems | Christopher Mangun",
-        description: "Forward-Deployed AI Architect case study: 4M+ patients, 99.99% alert delivery, zero missed critical alerts.",
+        title: "Abbott Libre CGM - Patient-Critical Platform Delivery | Christopher Mangun",
+        description: "Senior Project Director case study: Led patient-critical platform serving 4M+ patients with 99.99% reliability.",
         url: `${siteConfig.url}/fde-case-study-05`,
     },
     alternates: {
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
 };
 
 const caseStudySchema = generateCaseStudySchema({
-    title: 'Libre CGM - Patient-Critical Real-Time Glucose Monitoring',
-    description: 'Forward-Deployed AI Architect delivered real-time alert pipeline for 4M+ patients with 99.99% delivery rate and zero missed critical alerts.',
-    client: 'Abbott',
+    title: 'Abbott Libre CGM - Patient-Critical Monitoring Platform Delivery',
+    description: 'Senior Project Director led delivery of patient-critical monitoring platform serving 4M+ patients with 99.99% system reliability.',
+    client: 'Abbott Laboratories',
     slug: 'fde-case-study-05',
-    systemType: 'Real-Time Systems, Patient Safety, Medical Device Platform',
-    outcome: 'Production system with 99.99% alert delivery, sub-second latency, zero missed critical alerts',
+    systemType: 'Patient Monitoring, Medical Device Delivery, Healthcare Technology',
+    outcome: '4M+ patients served, 99.99% reliability, rigorous project governance',
 });
 
 const page = () => {

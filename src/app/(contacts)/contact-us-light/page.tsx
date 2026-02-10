@@ -2,7 +2,7 @@ import ContactUsMain from '@/pages/contacts/contact-us/ContactUsMain';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Contact Us Light",
+    title: "Senior Project Director | Contact Us Light",
 };
 
 const page = () => {

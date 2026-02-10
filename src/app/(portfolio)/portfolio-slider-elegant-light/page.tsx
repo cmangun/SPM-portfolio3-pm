@@ -2,7 +2,7 @@ import PortfolioSlicerElegant from '@/pages/portfolios/portfolio-slider-elegant/
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Forward Deployed Engineer | Portfolio Slicer elegant Light",
+  title: "Senior Project Director | Portfolio Slicer elegant Light",
 };
 
 const page = () => {

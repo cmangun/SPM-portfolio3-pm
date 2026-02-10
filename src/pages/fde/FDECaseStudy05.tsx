@@ -268,7 +268,7 @@ const FDECaseStudy05 = () => {
                     
                     {/* DIAGNOSE */}
                     <AccordionSection
-                      title="Diagnose"
+                      title="Discovery & Assessment"
                       subtitle="Alert failures, sync delays, reliability gaps"
                       isOpen={openSections.diagnose}
                       onToggle={() => toggleSection('diagnose')}
@@ -332,7 +332,7 @@ const FDECaseStudy05 = () => {
 
                     {/* ARCHITECT */}
                     <AccordionSection
-                      title="Architect"
+                      title="Planning & Alignment"
                       subtitle="Real-time pipeline, alert delivery, redundancy"
                       isOpen={openSections.architect}
                       onToggle={() => toggleSection('architect')}
@@ -344,7 +344,7 @@ const FDECaseStudy05 = () => {
                             <p>
                               Redesigned the real-time pipeline with patient safety as the primary 
                               constraint. Alert delivery is now a separate, prioritized path with 
-                              its own capacity allocation and failover.
+                              its own capacity allocation and redundancy.
                             </p>
                             <p>
                               Architecture principles: no single points of failure for critical alerts, 
@@ -392,8 +392,8 @@ const FDECaseStudy05 = () => {
 
                     {/* ENGINEER */}
                     <AccordionSection
-                      title="Engineer"
-                      subtitle="Error budgets, SLOs, incident response"
+                      title="Execution & Delivery"
+                      subtitle="Performance standards, reliability governance, incident response"
                       isOpen={openSections.engineer}
                       onToggle={() => toggleSection('engineer')}
                     >
@@ -449,7 +449,7 @@ const FDECaseStudy05 = () => {
 
                     {/* ENABLE */}
                     <AccordionSection
-                      title="Enable"
+                      title="Launch & Adoption"
                       subtitle="Runbooks, on-call training, incident procedures"
                       isOpen={openSections.enable}
                       onToggle={() => toggleSection('enable')}

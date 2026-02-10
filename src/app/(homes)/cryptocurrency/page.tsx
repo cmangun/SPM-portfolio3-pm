@@ -2,7 +2,7 @@ import CryptoCurrencyMain from '@/pages/homes/cryptocurrency/CryptoCurrencyMain'
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Cryptocurrency Light",
+    title: "Senior Project Director | Cryptocurrency Light",
 };
 
 

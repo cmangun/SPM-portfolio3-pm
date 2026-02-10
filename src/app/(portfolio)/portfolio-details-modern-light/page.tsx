@@ -2,7 +2,7 @@ import PortfolioDetailsModern from '@/pages/portfolios/portfolio-details-modern/
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Details Modern Light",
+    title: "Senior Project Director | Portfolio Details Modern Light",
 };
 
 const page = () => {

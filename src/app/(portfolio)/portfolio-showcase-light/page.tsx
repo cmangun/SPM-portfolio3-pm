@@ -2,7 +2,7 @@ import PortfolioShowcaseMain from '@/pages/portfolios/portfolio-showcase/Portfol
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Portfolio Showcase Light",
+    title: "Senior Project Director | Portfolio Showcase Light",
 };
 
 const page = () => {

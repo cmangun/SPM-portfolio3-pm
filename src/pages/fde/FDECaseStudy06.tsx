@@ -422,7 +422,7 @@ const FDECaseStudy06 = () => {
                    
                     {/* DIAGNOSE */}
                     <AccordionSection
-                      title="Diagnose"
+                      title="Discovery & Assessment"
                       subtitle="Detection gaps, regulatory challenges, clinical workflow"
                       isOpen={openSections.diagnose}
                       onToggle={() => toggleSection('diagnose')}
@@ -472,7 +472,7 @@ const FDECaseStudy06 = () => {
 
                     {/* ARCHITECT */}
                     <AccordionSection
-                      title="Architect"
+                      title="Planning & Alignment"
                       subtitle="Real-time inference, clinical integration, regulatory architecture"
                       isOpen={openSections.architect}
                       onToggle={() => toggleSection('architect')}
@@ -506,7 +506,7 @@ const FDECaseStudy06 = () => {
 
                     {/* ENGINEER */}
                     <AccordionSection
-                      title="Engineer"
+                      title="Execution & Delivery"
                       subtitle="Model validation, performance metrics, regulatory documentation"
                       isOpen={openSections.engineer}
                       onToggle={() => toggleSection('engineer')}
@@ -559,7 +559,7 @@ const FDECaseStudy06 = () => {
 
                     {/* ENABLE */}
                     <AccordionSection
-                      title="Enable"
+                      title="Launch & Adoption"
                       subtitle="Clinical adoption, training, workflow integration"
                       isOpen={openSections.enable}
                       onToggle={() => toggleSection('enable')}

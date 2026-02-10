@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: "Page Not Found | Forward Deployed Engineer",
+    title: "Page Not Found | Senior Project Director",
 };
 
 export default function NotFound() {

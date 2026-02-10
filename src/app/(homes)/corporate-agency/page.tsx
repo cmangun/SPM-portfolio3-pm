@@ -2,7 +2,7 @@ import CorporateAgencyMain from '@/pages/homes/corporate-agency/CorporateAgencyM
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Forward Deployed Engineer | Corporate Agency Light",
+    title: "Senior Project Director | Corporate Agency Light",
 };
 
 const page = () => {
