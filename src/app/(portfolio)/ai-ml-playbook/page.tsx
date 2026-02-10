@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { siteConfig } from '@/lib/seo-config';
-import AiMlPlaybookEmbed from './AiMlPlaybookEmbed';
+import AiMlPlaybook from '@/pages/fde/AiMlPlaybook';
 
 export const metadata: Metadata = {
     title: "AI/ML Production Playbook - 12-Month Enterprise Roadmap | Senior Project Director",
@@ -25,5 +25,5 @@ export const metadata: Metadata = {
 };
 
 export default function AiMlPlaybookPage() {
-    return <AiMlPlaybookEmbed />;
+    return <AiMlPlaybook />;
 }
