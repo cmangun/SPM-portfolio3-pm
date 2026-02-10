@@ -41,11 +41,6 @@ const menuItemsTwo: MenuItem[] = [
         ]
     },
     {
-        title: "AI/ML Playbook",
-        href: "https://healthcare-ai-consultant.com",
-        static: true,
-    },
-    {
         title: "Certifications",
         href: "/certifications",
         static: false,
