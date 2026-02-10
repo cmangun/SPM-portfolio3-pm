@@ -41,11 +41,6 @@ const menuItemsTwo: MenuItem[] = [
         ]
     },
     {
-        title: "AI/ML Playbook",
-        href: "/ai-ml-playbook",
-        static: false,
-    },
-    {
         title: "Certifications",
         href: "/certifications",
         static: false,
